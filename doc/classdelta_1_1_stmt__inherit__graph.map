@@ -1,0 +1,14 @@
+<map id="delta::Stmt" name="delta::Stmt">
+<area shape="rect" id="node2" href="$classdelta_1_1_assign_stmt.html" title="delta::AssignStmt" alt="" coords="151,5,276,31"/>
+<area shape="rect" id="node3" href="$classdelta_1_1_aug_assign_stmt.html" title="An augmented assignment (a.k.a. compound assignment) statement. " alt="" coords="139,55,288,80"/>
+<area shape="rect" id="node4" href="$classdelta_1_1_break_stmt.html" title="delta::BreakStmt" alt="" coords="154,104,273,129"/>
+<area shape="rect" id="node5" href="$classdelta_1_1_decrement_stmt.html" title="delta::DecrementStmt" alt="" coords="138,153,289,179"/>
+<area shape="rect" id="node6" href="$classdelta_1_1_defer_stmt.html" title="delta::DeferStmt" alt="" coords="155,203,272,228"/>
+<area shape="rect" id="node7" href="$classdelta_1_1_expr_stmt.html" title="A statement that consists of the evaluation of a single expression. " alt="" coords="157,252,270,277"/>
+<area shape="rect" id="node8" href="$classdelta_1_1_if_stmt.html" title="delta::IfStmt" alt="" coords="167,301,260,327"/>
+<area shape="rect" id="node9" href="$classdelta_1_1_increment_stmt.html" title="delta::IncrementStmt" alt="" coords="141,351,286,376"/>
+<area shape="rect" id="node10" href="$classdelta_1_1_return_stmt.html" title="delta::ReturnStmt" alt="" coords="151,400,276,425"/>
+<area shape="rect" id="node11" href="$classdelta_1_1_switch_stmt.html" title="delta::SwitchStmt" alt="" coords="151,449,276,475"/>
+<area shape="rect" id="node12" href="$classdelta_1_1_variable_stmt.html" title="delta::VariableStmt" alt="" coords="147,499,280,524"/>
+<area shape="rect" id="node13" href="$classdelta_1_1_while_stmt.html" title="delta::WhileStmt" alt="" coords="154,548,273,573"/>
+</map>

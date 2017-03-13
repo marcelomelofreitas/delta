@@ -1,0 +1,9 @@
+<map id="delta::VariableStmt" name="delta::VariableStmt">
+<area shape="rect" id="node2" href="$classdelta_1_1_stmt.html" title="delta::Stmt" alt="" coords="54,180,139,205"/>
+<area shape="rect" id="node3" href="$classdelta_1_1_var_decl.html" title="delta::VarDecl" alt="" coords="163,180,268,205"/>
+<area shape="rect" id="node4" href="$classdelta_1_1_decl.html" title="delta::Decl" alt="" coords="5,93,90,119"/>
+<area shape="rect" id="node5" href="$structdelta_1_1_type.html" title="delta::Type" alt="" coords="114,93,200,119"/>
+<area shape="rect" id="node6" href="$structdelta_1_1_src_loc.html" title="delta::SrcLoc" alt="" coords="225,93,324,119"/>
+<area shape="rect" id="node7" title="STL class. " alt="" coords="348,93,427,119"/>
+<area shape="rect" id="node8" title="STL class. " alt="" coords="325,5,450,44"/>
+</map>

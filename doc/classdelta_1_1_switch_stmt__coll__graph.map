@@ -1,0 +1,6 @@
+<map id="delta::SwitchStmt" name="delta::SwitchStmt">
+<area shape="rect" id="node2" href="$classdelta_1_1_stmt.html" title="delta::Stmt" alt="" coords="12,10,97,35"/>
+<area shape="rect" id="node9" href="$classdelta_1_1_switch_case.html" title="delta::SwitchCase" alt="" coords="694,101,822,126"/>
+<area shape="rect" id="node4" href="$classdelta_1_1_expr.html" title="delta::Expr" alt="" coords="228,142,313,167"/>
+<area shape="rect" id="node5" href="$structdelta_1_1_src_loc.html" title="delta::SrcLoc" alt="" coords="5,142,104,167"/>
+</map>

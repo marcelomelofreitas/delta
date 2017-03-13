@@ -1,0 +1,14 @@
+<map id="src/ast/type.h" name="src/ast/type.h">
+<area shape="rect" id="node2" href="$expr_8h.html" title="src/ast/expr.h" alt="" coords="379,79,479,104"/>
+<area shape="rect" id="node3" href="$decl_8h.html" title="src/ast/decl.h" alt="" coords="503,225,603,251"/>
+<area shape="rect" id="node10" href="$c-import_8cpp.html" title="src/sema/c&#45;import.cpp" alt="" coords="1129,299,1281,324"/>
+<area shape="rect" id="node11" href="$typecheck_8cpp.html" title="src/sema/typecheck.cpp" alt="" coords="5,299,170,324"/>
+<area shape="rect" id="node13" href="$type_8cpp.html" title="src/ast/type.cpp" alt="" coords="727,79,842,104"/>
+<area shape="rect" id="node6" href="$expr_8cpp.html" title="src/ast/expr.cpp" alt="" coords="194,299,309,324"/>
+<area shape="rect" id="node8" href="$irgen_8cpp.html" title="src/irgen/irgen.cpp" alt="" coords="333,299,464,324"/>
+<area shape="rect" id="node12" href="$stmt_8h.html" title="src/ast/stmt.h" alt="" coords="500,152,600,177"/>
+<area shape="rect" id="node4" href="$ast__printer_8cpp.html" title="src/ast/ast_printer.cpp" alt="" coords="953,299,1105,324"/>
+<area shape="rect" id="node5" href="$decl_8cpp.html" title="src/ast/decl.cpp" alt="" coords="815,299,928,324"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="src/driver/main.cpp" alt="" coords="487,299,621,324"/>
+<area shape="rect" id="node9" href="$mangle_8cpp.html" title="src/irgen/mangle.cpp" alt="" coords="646,299,791,324"/>
+</map>

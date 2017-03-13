@@ -1,0 +1,9 @@
+<map id="delta::Type::isRef" name="delta::Type::isRef">
+<area shape="rect" id="node2" href="$structdelta_1_1_type.html#a16a719104a088d92388e5a5d0f28981f" title="delta::Type::isImplicitly\lConvertibleTo" alt="" coords="180,29,335,68"/>
+<area shape="rect" id="node3" href="$structdelta_1_1_type.html#ab7e32dafb00dc2c9976ad5486b1e1477" title="delta::Type::getReferee" alt="" coords="178,92,338,117"/>
+<area shape="rect" id="node4" href="$namespacedelta.html#ad62d6b2e68bcdebd01b3e7bc4f905c22" title="delta::operator==" alt="" coords="196,141,319,167"/>
+<area shape="rect" id="node6" href="$structdelta_1_1_type.html#ad33f5df1e06c20291060f7a33912bd18" title="delta::Type::printTo" alt="" coords="191,215,325,240"/>
+<area shape="rect" id="node5" href="$classdelta_1_1_ptr_type.html#ada68d169a87da36cc9a55a3d1ba12d00" title="delta::PtrType::classof" alt="" coords="386,141,538,167"/>
+<area shape="rect" id="node7" href="$structdelta_1_1_type.html#a98ef8c2e4a833d7c8db893fd14f9e466" title="delta::Type::toString" alt="" coords="392,203,532,228"/>
+<area shape="rect" id="node8" href="$namespacedelta.html#a679bd697f2c5acfcb9361ff45a7eeef1" title="delta::operator\&lt;\&lt;" alt="" coords="400,252,523,277"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="src/sema/typecheck.cpp" name="src/sema/typecheck.cpp">
+<area shape="rect" id="node13" href="$typecheck_8h.html" title="typecheck.h" alt="" coords="2154,239,2246,264"/>
+<area shape="rect" id="node15" href="$c-import_8h.html" title="c&#45;import.h" alt="" coords="1527,85,1608,111"/>
+<area shape="rect" id="node16" href="$type_8h.html" title="../ast/type.h" alt="" coords="1528,312,1618,337"/>
+<area shape="rect" id="node20" href="$expr_8h.html" title="../ast/expr.h" alt="" coords="1860,239,1950,264"/>
+<area shape="rect" id="node25" href="$decl_8h.html" title="../ast/decl.h" alt="" coords="1802,85,1891,111"/>
+<area shape="rect" id="node29" href="$utility_8h.html" title="../driver/utility.h" alt="" coords="754,85,864,111"/>
+<area shape="rect" id="node31" href="$mangle_8h.html" title="../irgen/mangle.h" alt="" coords="2321,239,2441,264"/>
+<area shape="rect" id="node22" href="$srcloc_8h.html" title="srcloc.h" alt="" coords="1642,312,1709,337"/>
+<area shape="rect" id="node24" href="$operators_8h.html" title="../parser/operators.h" alt="" coords="1834,312,1976,337"/>
+<area shape="rect" id="node27" href="$stmt_8h.html" title="stmt.h" alt="" coords="1986,165,2043,191"/>
+</map>

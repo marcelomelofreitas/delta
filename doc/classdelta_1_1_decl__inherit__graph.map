@@ -1,0 +1,12 @@
+<map id="delta::Decl" name="delta::Decl">
+<area shape="rect" id="node2" href="$classdelta_1_1_deinit_decl.html" title="delta::DeinitDecl" alt="" coords="164,5,282,31"/>
+<area shape="rect" id="node3" href="$classdelta_1_1_field_decl.html" title="delta::FieldDecl" alt="" coords="166,55,279,80"/>
+<area shape="rect" id="node4" href="$classdelta_1_1_func_decl.html" title="delta::FuncDecl" alt="" coords="166,104,280,129"/>
+<area shape="rect" id="node5" href="$classdelta_1_1_generic_func_decl.html" title="delta::GenericFuncDecl" alt="" coords="142,153,303,179"/>
+<area shape="rect" id="node6" href="$classdelta_1_1_generic_param_decl.html" title="delta::GenericParamDecl" alt="" coords="138,203,308,228"/>
+<area shape="rect" id="node7" href="$classdelta_1_1_import_decl.html" title="delta::ImportDecl" alt="" coords="162,252,284,277"/>
+<area shape="rect" id="node8" href="$classdelta_1_1_init_decl.html" title="delta::InitDecl" alt="" coords="172,301,274,327"/>
+<area shape="rect" id="node9" href="$classdelta_1_1_param_decl.html" title="delta::ParamDecl" alt="" coords="161,351,285,376"/>
+<area shape="rect" id="node10" href="$classdelta_1_1_type_decl.html" title="delta::TypeDecl" alt="" coords="166,400,279,425"/>
+<area shape="rect" id="node11" href="$classdelta_1_1_var_decl.html" title="delta::VarDecl" alt="" coords="171,449,275,475"/>
+</map>

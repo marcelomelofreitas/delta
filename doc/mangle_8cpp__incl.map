@@ -1,0 +1,9 @@
+<map id="src/irgen/mangle.cpp" name="src/irgen/mangle.cpp">
+<area shape="rect" id="node3" href="$mangle_8h.html" title="mangle.h" alt="" coords="765,225,841,251"/>
+<area shape="rect" id="node5" href="$decl_8h.html" title="../ast/decl.h" alt="" coords="376,79,465,104"/>
+<area shape="rect" id="node9" href="$expr_8h.html" title="expr.h" alt="" coords="338,225,396,251"/>
+<area shape="rect" id="node10" href="$type_8h.html" title="type.h" alt="" coords="545,299,603,324"/>
+<area shape="rect" id="node14" href="$srcloc_8h.html" title="srcloc.h" alt="" coords="43,299,110,324"/>
+<area shape="rect" id="node17" href="$stmt_8h.html" title="stmt.h" alt="" coords="261,152,319,177"/>
+<area shape="rect" id="node16" href="$operators_8h.html" title="../parser/operators.h" alt="" coords="278,299,419,324"/>
+</map>
