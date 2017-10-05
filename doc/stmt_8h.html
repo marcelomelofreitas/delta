@@ -65,7 +65,6 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">stmt.h File Reference</div>  </div>
@@ -73,16 +72,19 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;llvm/Support/Casting.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="expr_8h_source.html">expr.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for stmt.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="stmt_8h__incl.svg" width="840" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 0 -->
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="stmt_8h__dep__incl.svg" width="1288" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 -->
+</div>
 </div>
 </div>
 <p><a href="stmt_8h_source.html">Go to the source code of this file.</a></p>
@@ -93,7 +95,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_return_stmt.html">delta::ReturnStmt</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_variable_stmt.html">delta::VariableStmt</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_var_stmt.html">delta::VarStmt</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_increment_stmt.html">delta::IncrementStmt</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,12 +114,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_while_stmt.html">delta::WhileStmt</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_for_stmt.html">delta::ForStmt</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_break_stmt.html">delta::BreakStmt</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_assign_stmt.html">delta::AssignStmt</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_aug_assign_stmt.html">delta::AugAssignStmt</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An augmented assignment (a.k.a. compound assignment) statement.  <a href="classdelta_1_1_aug_assign_stmt.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -125,16 +126,11 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacedelta"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html">delta</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a996c11ff9869e24e12ea11abf87a9ad7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stmt_8h.html#a996c11ff9869e24e12ea11abf87a9ad7">DEFINE_STMT_IS_AND_GET</a>(KIND)</td></tr>
-<tr class="separator:a996c11ff9869e24e12ea11abf87a9ad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a962a69e45a36ef9445118f0a440f06d9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9">delta::StmtKind</a> { <br />
 &#160;&#160;<a class="el" href="namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9afcc83d44c72e7a81578678d54fbcd663">delta::StmtKind::ReturnStmt</a>, 
-<a class="el" href="namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9af871cdd3302fad455eb2416db1cebde7">delta::StmtKind::VariableStmt</a>, 
+<a class="el" href="namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9ae882e5cf4add32541cbdae64cf04eb66">delta::StmtKind::VarStmt</a>, 
 <a class="el" href="namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9a85db077f4dc51e390babdcc310964936">delta::StmtKind::IncrementStmt</a>, 
 <a class="el" href="namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9a4262c6cd7aec7a470a371fa8de7b8c1c">delta::StmtKind::DecrementStmt</a>, 
 <br />
@@ -144,32 +140,13 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9ae36f57296561755af4e03553b55fa99c">delta::StmtKind::SwitchStmt</a>, 
 <br />
 &#160;&#160;<a class="el" href="namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9ad892e02ab8e354706edd7bf675c8429b">delta::StmtKind::WhileStmt</a>, 
+<a class="el" href="namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9a50570891b15ef4f4816814eafb138060">delta::StmtKind::ForStmt</a>, 
 <a class="el" href="namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9a7f3b653c9eeb22e74957b5736fdba34a">delta::StmtKind::BreakStmt</a>, 
-<a class="el" href="namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9ab855bfc4202c71c4ad5a719baf880282">delta::StmtKind::AssignStmt</a>, 
-<a class="el" href="namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9abe407626c477b643770dd20da1d31174">delta::StmtKind::AugAssignStmt</a>
+<a class="el" href="namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9ab855bfc4202c71c4ad5a719baf880282">delta::StmtKind::AssignStmt</a>
 <br />
  }</td></tr>
 <tr class="separator:a962a69e45a36ef9445118f0a440f06d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a996c11ff9869e24e12ea11abf87a9ad7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a996c11ff9869e24e12ea11abf87a9ad7">&#9670;&nbsp;</a></span>DEFINE_STMT_IS_AND_GET</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEFINE_STMT_IS_AND_GET</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">KIND</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">bool</span> is##KIND()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> getKind() == StmtKind::KIND; } \</div><div class="line">    class KIND&amp; <span class="keyword">get</span>##KIND() { <span class="keywordflow">return</span> llvm::cast&lt;class KIND&gt;(*this); } \</div><div class="line">    const <span class="keyword">class </span>KIND&amp; <span class="keyword">get</span>##KIND()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> llvm::cast&lt;class KIND&gt;(*this); }</div></div><!-- fragment -->
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

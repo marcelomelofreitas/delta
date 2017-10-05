@@ -1,6 +1,0 @@
-<map id="src/sema/typecheck.h" name="src/sema/typecheck.h">
-<area shape="rect" id="node2" href="$main_8cpp.html" title="src/driver/main.cpp" alt="" coords="5,79,139,104"/>
-<area shape="rect" id="node3" href="$irgen_8cpp.html" title="src/irgen/irgen.cpp" alt="" coords="163,79,294,104"/>
-<area shape="rect" id="node4" href="$c-import_8cpp.html" title="src/sema/c&#45;import.cpp" alt="" coords="317,79,470,104"/>
-<area shape="rect" id="node5" href="$typecheck_8cpp.html" title="src/sema/typecheck.cpp" alt="" coords="494,79,658,104"/>
-</map>

@@ -62,23 +62,26 @@ $(function() {
 <div class="title">Delta Programming Language </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a href="https://travis-ci.org/delta-lang/delta"></a></p>
-<p>Delta is a general-purpose programming language intended as an alternative to C++, C, and Rust. The project is currently in very early stages of development. See the (incomplete) <a class="el" href="md_doc_spec.html">specification document</a> for a detailed description of the language.</p>
+<div class="textblock"><p><a href="https://travis-ci.org/delta-lang/delta"></a> <a href="https://coveralls.io/github/delta-lang/delta?branch=master"></a></p>
+<p>Delta is a general-purpose programming language intended as an alternative to C++, C, and Rust. The project is currently in very early stages of development. See the (incomplete) <a class="el" href="md_docs_spec.html">specification document</a> for a detailed description of the language, or the more learning-oriented (and equally incomplete) <a href="https://delta-lang.gitbooks.io/delta-book/content/">Delta Book</a>.</p>
 <p>You can try out the language online at the <a href="https://delta-lang.github.io/delta-sandbox">Delta Sandbox</a>.</p>
 <h2>Building from source</h2>
-<p>Building Delta from source requires the following dependencies: a C++11 compiler, <a href="https://cmake.org">CMake</a>, <a href="http://www.boost.org">Boost</a>, <a href="https://www.gnu.org/software/bison/">Bison</a>, and the <a href="http://llvm.org">LLVM</a> and <a href="http://clang.llvm.org">Clang</a> libraries.</p>
-<p>To get started, run the following commands: </p><pre class="fragment">git clone https://github.com/delta-lang/delta.git
-cd delta
-mkdir build
+<p>Clone the repository including its submodules: </p><pre class="fragment">git clone --recursive https://github.com/delta-lang/delta.git
+</pre><p>Building Delta from source requires the following dependencies: a C++11 compiler, <a href="https://cmake.org">CMake</a>, <a href="http://thrysoee.dk/editline/">libedit</a>, and the <a href="http://llvm.org">LLVM</a> and <a href="http://clang.llvm.org">Clang</a> libraries (version 5.0.0). To run the test suite, you also need <a href="http://llvm.org/docs/CommandGuide/lit.html">lit</a>, which you can get with <code>pip install lit</code>.</p>
+<p>I recommend using <a href="https://ninja-build.org/">Ninja</a> instead of Make, because it has cleaner output, and runs builds in parallel by default. It can be installed with <code>sudo apt install ninja-build</code> (Ubuntu) or <code>brew install ninja</code> (macOS).</p>
+<p>If you're on Ubuntu you can run the provided <code>setup-build-ubuntu.sh</code> script to automatically download all the dependencies and invoke the appropriate commands to generate a ready-to-use build system.</p>
+<p>Otherwise, install the dependencies manually and do the following in the root directory of the repository: </p><pre class="fragment">mkdir build
 cd build
-cmake -G "Unix Makefiles" ..
-</pre><p>After this, the following commands can be used:</p>
+cmake -G Ninja ..
+</pre><p>After this, the following commands can be invoked from the <code>build</code> directory:</p>
 <ul>
-<li><code>make</code> builds the project.</li>
-<li><code>make check</code> runs the test suite and reports errors in case of failure.</li>
+<li><code>ninja</code> builds the project.</li>
+<li><code>ninja check</code> runs the test suite and reports errors in case of failure. Note: if your checks fail, try <code>export C_INCLUDE_PATH=/usr/include/x86_64-linux-gnu/</code></li>
+<li><code>ninja coverage</code> generates a test coverage report under <code>coverage/</code>.</li>
 </ul>
 <h2>Documentation</h2>
-<p>To generate HTML output from the documentation comments, run <code>doxygen doc/doxyfile</code> in the project root directory. The output is generated under <code>doc/html</code> and can be viewed by opening <code>doc/html/index.html</code> in a browser.</p>
+<p>Auto-generated API documentation for the compiler is available at <a href="https://delta-lang.github.io/delta/doc">https://delta-lang.github.io/delta/doc</a>.</p>
+<p>To generate HTML for the API documentation locally, run <code>doxygen docs/doxyfile</code> in the project root directory. The output is generated under <code>docs/html</code> and can be viewed by opening <code>docs/html/index.html</code> in a browser.</p>
 <h2>Usage</h2>
 <p>The basic usage of the Delta compiler is as follows:</p>
 <ul>
@@ -87,7 +90,7 @@ cmake -G "Unix Makefiles" ..
 </ul>
 <p>Run <code>delta -help</code> for more options.</p>
 <h2>Contributing</h2>
-<p>Delta is an open-source language. Contributions are welcome and encouraged! See the current <a href="https://github.com/delta-lang/delta/projects">projects</a> for things that need to be done.</p>
+<p>Delta is an open-source language. Contributions are welcome and encouraged! See the current <a href="https://github.com/delta-lang/delta/projects">projects</a> for things that need to be done. All contributors are expected to follow the Delta <a class="el" href="md_docs__c_o_d_e__o_f__c_o_n_d_u_c_t.html">code of conduct</a>.</p>
 <h2>License</h2>
 <p>This implementation of Delta is licensed under the MIT license, a permissive free software license. See the file <a href="LICENSE.txt">LICENSE.txt</a> for the full license text. </p>
 </div></div><!-- contents -->

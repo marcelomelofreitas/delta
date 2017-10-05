@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['elements',['elements',['../classdelta_1_1_array_literal_expr.html#aff2a06d40bc9e28f68c6567a17e9d66d',1,'delta::ArrayLiteralExpr']]],
-  ['elementtype',['elementType',['../classdelta_1_1_array_type.html#ae038946cf9cb8e34737255905e505684',1,'delta::ArrayType']]],
-  ['elsebody',['elseBody',['../classdelta_1_1_if_stmt.html#afe6ae65482cab2e25edbc728f1dd3e46',1,'delta::IfStmt']]],
-  ['error',['error',['../namespacedelta.html#a9ade49bb9e7e0ab4a3baa95e65a045f2',1,'delta']]],
-  ['expr',['Expr',['../classdelta_1_1_expr.html',1,'delta::Expr'],['../classdelta_1_1_expr.html#a1d5eb76c0f3bc5b0b3303f34c3a50ec5',1,'delta::Expr::Expr()'],['../classdelta_1_1_cast_expr.html#a4855a817475af62c9ba56fb79b58a9fe',1,'delta::CastExpr::expr()'],['../classdelta_1_1_expr_stmt.html#af791e4dfd91172236a9ac88c45ffeb19',1,'delta::ExprStmt::expr()'],['../classdelta_1_1_defer_stmt.html#a0d15289909a032dbac12fbef6bcc1a92',1,'delta::DeferStmt::expr()']]],
+  ['else',['ELSE',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036ea93ad5b457e49b05cd5eddc6e0ff8b724',1,'delta']]],
+  ['eq',['EQ',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036ea18cd8ced596647dfa87d1c0587b41fcb',1,'delta']]],
+  ['error',['error',['../namespacedelta.html#aa3ab557ef3d33f92b83f98784571c388',1,'delta']]],
+  ['expr',['Expr',['../classdelta_1_1_expr.html',1,'delta::Expr'],['../classdelta_1_1_expr.html#a23f829b836ef2b8e952b2df4734b057f',1,'delta::Expr::Expr()']]],
   ['expr_2ecpp',['expr.cpp',['../expr_8cpp.html',1,'']]],
   ['expr_2eh',['expr.h',['../expr_8h.html',1,'']]],
   ['exprkind',['ExprKind',['../namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322',1,'delta']]],
-  ['exprstmt',['ExprStmt',['../classdelta_1_1_expr_stmt.html',1,'delta::ExprStmt'],['../classdelta_1_1_expr_stmt.html#a70d6d41c99abd69d745dee21d79dd801',1,'delta::ExprStmt::ExprStmt()'],['../namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9a22daed0170956dc364ad068322f6dbb2',1,'delta::ExprStmt()']]]
+  ['exprstmt',['ExprStmt',['../classdelta_1_1_expr_stmt.html',1,'delta::ExprStmt'],['../classdelta_1_1_expr_stmt.html#a70d6d41c99abd69d745dee21d79dd801',1,'delta::ExprStmt::ExprStmt()'],['../namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9a22daed0170956dc364ad068322f6dbb2',1,'delta::ExprStmt()']]],
+  ['extern',['EXTERN',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036ea822b78b67c3a1b59de9b1153e3d4cd7f',1,'delta']]]
 ];

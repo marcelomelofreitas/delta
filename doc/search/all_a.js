@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['name',['name',['../classdelta_1_1_param_decl.html#aa8b090484885ebb8ff009ae18cefa2b6',1,'delta::ParamDecl::name()'],['../classdelta_1_1_generic_param_decl.html#a4c8bc99edd043b081388e407d738d49a',1,'delta::GenericParamDecl::name()'],['../classdelta_1_1_func_decl.html#a85a232a7c61a454c5fd8456a201c974e',1,'delta::FuncDecl::name()'],['../classdelta_1_1_type_decl.html#ab87b1977d62a1fd501a62d135a9259bb',1,'delta::TypeDecl::name()'],['../classdelta_1_1_var_decl.html#afb18ddabbb52cc3b23bb6bb1fa1cccbd',1,'delta::VarDecl::name()'],['../classdelta_1_1_field_decl.html#a8fd9405aed256b5ae01d50e964f19f52',1,'delta::FieldDecl::name()'],['../classdelta_1_1_basic_type.html#aaff2cc93d8cb6d64c52c2c9054111955',1,'delta::BasicType::name()']]],
-  ['nullliteralexpr',['NullLiteralExpr',['../classdelta_1_1_null_literal_expr.html',1,'delta::NullLiteralExpr'],['../classdelta_1_1_null_literal_expr.html#a2a71e258f9cc1ad87e3fac17dcf70fc7',1,'delta::NullLiteralExpr::NullLiteralExpr()'],['../namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a660988abeb028f3c6733a1320e094e79',1,'delta::NullLiteralExpr()']]]
+  ['ne',['NE',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036ea1d3266ccdf97f6c2990bc4e59f36f627',1,'delta']]],
+  ['newline',['NEWLINE',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036ea9c3fa7199c4c74a7dc6996c5cb17e9c6',1,'delta']]],
+  ['no_5ftoken',['NO_TOKEN',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036eacf057351562e1705d709a308d17b15dd',1,'delta']]],
+  ['not',['NOT',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036ea328c3f8a73b2f35dce0c40ebc09052da',1,'delta']]],
+  ['null_5fliteral',['NULL_LITERAL',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036eacfdf3742e8a2e78971ea11d59678585c',1,'delta']]],
+  ['nullliteralexpr',['NullLiteralExpr',['../classdelta_1_1_null_literal_expr.html',1,'delta::NullLiteralExpr'],['../classdelta_1_1_null_literal_expr.html#a0b8b87bf3058df3c40955960e642d34b',1,'delta::NullLiteralExpr::NullLiteralExpr()'],['../namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a660988abeb028f3c6733a1320e094e79',1,'delta::NullLiteralExpr()']]]
 ];

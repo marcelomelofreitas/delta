@@ -64,28 +64,45 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structdelta_1_1_prefix_operator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">delta::PrefixOperator Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="operators_8h_source.html">operators.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="token_8h_source.html">token.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a15457b4001672fb8a0bdb446a2dcd3ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdelta_1_1_prefix_operator.html#a15457b4001672fb8a0bdb446a2dcd3ab">PrefixOperator</a> (int op)</td></tr>
-<tr class="separator:a15457b4001672fb8a0bdb446a2dcd3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:af7240b003a9ae8a1fbea20ce527cd84a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdelta_1_1_prefix_operator.html#af7240b003a9ae8a1fbea20ce527cd84a">rawValue</a></td></tr>
-<tr class="separator:af7240b003a9ae8a1fbea20ce527cd84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a3e9504fc3dda2fa39142f92cca9cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdelta_1_1_prefix_operator.html#ad1a3e9504fc3dda2fa39142f92cca9cb">PrefixOperator</a> (<a class="el" href="structdelta_1_1_token.html">Token</a> token)</td></tr>
+<tr class="separator:ad1a3e9504fc3dda2fa39142f92cca9cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec0f460cfd042f092a19c6734651858"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedelta.html#a2c180fa4fc8893d862b5517016c7036e">TokenKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdelta_1_1_prefix_operator.html#a3ec0f460cfd042f092a19c6734651858">getKind</a> () const</td></tr>
+<tr class="separator:a3ec0f460cfd042f092a19c6734651858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f91a1ffe39cc6fc420c296e194886d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdelta_1_1_prefix_operator.html#a7f91a1ffe39cc6fc420c296e194886d7">operator TokenKind</a> () const</td></tr>
+<tr class="separator:a7f91a1ffe39cc6fc420c296e194886d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a15457b4001672fb8a0bdb446a2dcd3ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15457b4001672fb8a0bdb446a2dcd3ab">&#9670;&nbsp;</a></span>PrefixOperator()</h2>
+<a id="ad1a3e9504fc3dda2fa39142f92cca9cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1a3e9504fc3dda2fa39142f92cca9cb">&#9670;&nbsp;</a></span>PrefixOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PrefixOperator::PrefixOperator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdelta_1_1_token.html">Token</a>&#160;</td>
+          <td class="paramname"><em>token</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3ec0f460cfd042f092a19c6734651858"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec0f460cfd042f092a19c6734651858">&#9670;&nbsp;</a></span>getKind()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -94,11 +111,10 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">delta::PrefixOperator::PrefixOperator </td>
+          <td class="memname"><a class="el" href="namespacedelta.html#a2c180fa4fc8893d862b5517016c7036e">TokenKind</a> delta::PrefixOperator::getKind </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>op</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -110,23 +126,34 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="af7240b003a9ae8a1fbea20ce527cd84a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7240b003a9ae8a1fbea20ce527cd84a">&#9670;&nbsp;</a></span>rawValue</h2>
+<a id="a7f91a1ffe39cc6fc420c296e194886d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f91a1ffe39cc6fc420c296e194886d7">&#9670;&nbsp;</a></span>operator TokenKind()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int delta::PrefixOperator::rawValue</td>
+          <td class="memname">delta::PrefixOperator::operator <a class="el" href="namespacedelta.html#a2c180fa4fc8893d862b5517016c7036e">TokenKind</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/parser/<a class="el" href="operators_8h_source.html">operators.h</a></li>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li>src/ast/<a class="el" href="token_8h_source.html">token.h</a></li>
+<li>src/ast/<a class="el" href="token_8cpp.html">token.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

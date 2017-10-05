@@ -1,6 +1,21 @@
 var searchData=
 [
-  ['vardecl',['VarDecl',['../classdelta_1_1_var_decl.html#a6952906805e6abf33806f593570e2b50',1,'delta::VarDecl']]],
-  ['variableexpr',['VariableExpr',['../classdelta_1_1_variable_expr.html#a9d79e69989b1e3f11062c970971c855e',1,'delta::VariableExpr']]],
-  ['variablestmt',['VariableStmt',['../classdelta_1_1_variable_stmt.html#a47375c7d81faebba78d7b5bebc338def',1,'delta::VariableStmt']]]
+  ['todisjunctivelist',['toDisjunctiveList',['../namespacedelta.html#a59c08ec9fbb2260ca54b2eb4bcd0642b',1,'delta']]],
+  ['toir',['toIR',['../classdelta_1_1_i_r_generator.html#a921262b31eeedf04594f66dcbaa08e8a',1,'delta::IRGenerator']]],
+  ['token',['Token',['../structdelta_1_1_token.html#a013a2ae635d6990335e8eb5210b3c584',1,'delta::Token']]],
+  ['tostring',['toString',['../structdelta_1_1_type.html#a98ef8c2e4a833d7c8db893fd14f9e466',1,'delta::Type::toString()'],['../namespacedelta.html#a401c6405c949a034a7f65c079925893d',1,'delta::toString()']]],
+  ['type',['Type',['../structdelta_1_1_type.html#a8571b75d408ad2c6ac67fad6f2351ea4',1,'delta::Type']]],
+  ['typebase',['TypeBase',['../classdelta_1_1_type_base.html#a4869a82b97116ed24e6e807c52ff2ac0',1,'delta::TypeBase']]],
+  ['typecheckboolliteralexpr',['typecheckBoolLiteralExpr',['../typecheck-expr_8cpp.html#a96b00468cafb019998b691b8751b4d46',1,'typecheck-expr.cpp']]],
+  ['typechecker',['TypeChecker',['../classdelta_1_1_type_checker.html#a9d6dad56f4143fbbbe95eb3242050600',1,'delta::TypeChecker']]],
+  ['typecheckexpr',['typecheckExpr',['../classdelta_1_1_type_checker.html#ab19a9a7679086f4e999cce03e35922fc',1,'delta::TypeChecker']]],
+  ['typecheckfielddecl',['typecheckFieldDecl',['../typecheck_8cpp.html#a2c9ee9f40f7f3e5f6ebd9e8ce4dfd559',1,'typecheck.cpp']]],
+  ['typecheckfloatliteralexpr',['typecheckFloatLiteralExpr',['../typecheck-expr_8cpp.html#a8c2a6064c81779ba48fa789b6664bf87',1,'typecheck-expr.cpp']]],
+  ['typecheckintliteralexpr',['typecheckIntLiteralExpr',['../typecheck-expr_8cpp.html#a8d5928005e0afe145dccc8915d8937f2',1,'typecheck-expr.cpp']]],
+  ['typecheckmodule',['typecheckModule',['../namespacedelta.html#a640468ebe486aee02501f76f96781f90',1,'delta']]],
+  ['typechecknullliteralexpr',['typecheckNullLiteralExpr',['../typecheck-expr_8cpp.html#a604c48557fc70deb374eef16c7673846',1,'typecheck-expr.cpp']]],
+  ['typecheckstringliteralexpr',['typecheckStringLiteralExpr',['../typecheck-expr_8cpp.html#acb86807fd0062357648c5607b9ad68b1',1,'typecheck-expr.cpp']]],
+  ['typechecktopleveldecl',['typecheckTopLevelDecl',['../classdelta_1_1_type_checker.html#a6f183b3656e0dc9a1882e9145ef5e5ea',1,'delta::TypeChecker']]],
+  ['typecheckvardecl',['typecheckVarDecl',['../classdelta_1_1_type_checker.html#a5ac25011668c8781d97542e49d7f8868',1,'delta::TypeChecker']]],
+  ['typedecl',['TypeDecl',['../classdelta_1_1_type_decl.html#a6c5d24085503abb14f5708e96b592cd9',1,'delta::TypeDecl']]]
 ];

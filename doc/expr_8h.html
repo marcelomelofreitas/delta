@@ -65,8 +65,8 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">expr.h File Reference</div>  </div>
 </div><!--header-->
@@ -74,18 +74,22 @@ $(function() {
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;llvm/ADT/STLExtras.h&gt;</code><br />
+<code>#include &lt;llvm/Support/Casting.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="type_8h_source.html">type.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="srcloc_8h_source.html">srcloc.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="operators_8h_source.html">../parser/operators.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="location_8h_source.html">location.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="token_8h_source.html">token.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for expr.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="expr_8h__incl.svg" width="838" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 0 -->
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="expr_8h__dep__incl.svg" width="1287" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 -->
+</div>
 </div>
 </div>
 <p><a href="expr_8h_source.html">Go to the source code of this file.</a></p>
@@ -94,11 +98,13 @@ This graph shows which files directly or indirectly include this file:</div>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_expr.html">delta::Expr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_variable_expr.html">delta::VariableExpr</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_var_expr.html">delta::VarExpr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_str_literal_expr.html">delta::StrLiteralExpr</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_string_literal_expr.html">delta::StringLiteralExpr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_int_literal_expr.html">delta::IntLiteralExpr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_float_literal_expr.html">delta::FloatLiteralExpr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_bool_literal_expr.html">delta::BoolLiteralExpr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,13 +112,13 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_array_literal_expr.html">delta::ArrayLiteralExpr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_argument.html">delta::Argument</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_call_expr.html">delta::CallExpr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_prefix_expr.html">delta::PrefixExpr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_binary_expr.html">delta::BinaryExpr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_arg.html">delta::Arg</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_call_expr.html">delta::CallExpr</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_cast_expr.html">delta::CastExpr</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A type cast expression using the 'cast' keyword, e.g. 'cast&lt;type&gt;(expr)'.  <a href="classdelta_1_1_cast_expr.html#details">More...</a><br /></td></tr>
@@ -123,57 +129,43 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_subscript_expr.html">delta::SubscriptExpr</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array element access expression using the element's index in brackets, e.g. 'array[index]'.  <a href="classdelta_1_1_subscript_expr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_unwrap_expr.html">delta::UnwrapExpr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacedelta"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html">delta</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a111c4b390c0744a718c89aae83cfdc7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="expr_8h.html#a111c4b390c0744a718c89aae83cfdc7e">DEFINE_EXPR_IS_AND_GET</a>(KIND)</td></tr>
-<tr class="separator:a111c4b390c0744a718c89aae83cfdc7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a70b6b5e67ca61f37766425b74a1e4322"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322">delta::ExprKind</a> { <br />
-&#160;&#160;<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a85d8309062c47e5cd645cd423a98a06f">delta::ExprKind::VariableExpr</a>, 
-<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a86ca685899637dc2470d7d3134715f0d">delta::ExprKind::StrLiteralExpr</a>, 
+&#160;&#160;<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a9058e7e3b63afd1aad67737d16771e2e">delta::ExprKind::VarExpr</a>, 
+<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a1966feb1642c2bf3be9c43d8e6f5e446">delta::ExprKind::StringLiteralExpr</a>, 
 <a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a80db48500edd6d237c0a845168a43f0c">delta::ExprKind::IntLiteralExpr</a>, 
-<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322aff160f3947ddf9e07d6aed2369465ea0">delta::ExprKind::BoolLiteralExpr</a>, 
+<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322add5bf85cd1dd44c8d2e085c2054f3ff4">delta::ExprKind::FloatLiteralExpr</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a660988abeb028f3c6733a1320e094e79">delta::ExprKind::NullLiteralExpr</a>, 
+&#160;&#160;<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322aff160f3947ddf9e07d6aed2369465ea0">delta::ExprKind::BoolLiteralExpr</a>, 
+<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a660988abeb028f3c6733a1320e094e79">delta::ExprKind::NullLiteralExpr</a>, 
 <a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322ad726ee74b8030fe74f80369a37d7cfd5">delta::ExprKind::ArrayLiteralExpr</a>, 
 <a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322acccc7f84f16c787fa994aa70011641b1">delta::ExprKind::PrefixExpr</a>, 
-<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a7e24edef999f6121a9536f2dcc2c629a">delta::ExprKind::BinaryExpr</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a1b51eef30529c5fda3334c343fe19e0a">delta::ExprKind::CallExpr</a>, 
+&#160;&#160;<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a7e24edef999f6121a9536f2dcc2c629a">delta::ExprKind::BinaryExpr</a>, 
+<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a1b51eef30529c5fda3334c343fe19e0a">delta::ExprKind::CallExpr</a>, 
 <a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a7ada5cd015cdf03477480d8d17ee08b9">delta::ExprKind::CastExpr</a>, 
 <a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a0250ba535fe7d23cd62b21ea4b3d7cdc">delta::ExprKind::MemberExpr</a>, 
-<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a89c8c7292e4f424e1f7cf18bf13f4e2e">delta::ExprKind::SubscriptExpr</a>
+<br />
+&#160;&#160;<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a89c8c7292e4f424e1f7cf18bf13f4e2e">delta::ExprKind::SubscriptExpr</a>, 
+<a class="el" href="namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a4bdc7bc00a955c0f457fc732177ba7c7">delta::ExprKind::UnwrapExpr</a>
 <br />
  }</td></tr>
 <tr class="separator:a70b6b5e67ca61f37766425b74a1e4322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2fd723c13c55dc2994575f4fa64b147c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Argument &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a2fd723c13c55dc2994575f4fa64b147c">delta::addArg</a> (std::vector&lt; Argument &gt; &amp;&amp;args, std::shared_ptr&lt; Expr &gt; &amp;&amp;arg)</td></tr>
+<tr class="separator:a2fd723c13c55dc2994575f4fa64b147c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a111c4b390c0744a718c89aae83cfdc7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a111c4b390c0744a718c89aae83cfdc7e">&#9670;&nbsp;</a></span>DEFINE_EXPR_IS_AND_GET</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEFINE_EXPR_IS_AND_GET</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">KIND</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">bool</span> is##KIND()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> getKind() == ExprKind::KIND; } \</div><div class="line">    class KIND&amp; <span class="keyword">get</span>##KIND() { <span class="keywordflow">return</span> llvm::cast&lt;class  KIND&gt;(*this); } \</div><div class="line">    const <span class="keyword">class </span>KIND&amp; <span class="keyword">get</span>##KIND()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> llvm::cast&lt;class KIND&gt;(*this); }</div></div><!-- fragment -->
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -62,35 +62,221 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">typecheck.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
+<div class="textblock"><code>#include &lt;iterator&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
-<code>#include &lt;boost/numeric/conversion/cast.hpp&gt;</code><br />
+<code>#include &lt;system_error&gt;</code><br />
 <code>#include &lt;llvm/ADT/ArrayRef.h&gt;</code><br />
-<code>#include &lt;llvm/ADT/Optional.h&gt;</code><br />
 <code>#include &lt;llvm/ADT/StringRef.h&gt;</code><br />
+<code>#include &lt;llvm/ADT/SmallVector.h&gt;</code><br />
 <code>#include &lt;llvm/ADT/STLExtras.h&gt;</code><br />
-<code>#include &lt;llvm/ADT/iterator_range.h&gt;</code><br />
 <code>#include &lt;llvm/Support/ErrorHandling.h&gt;</code><br />
+<code>#include &lt;llvm/Support/FileSystem.h&gt;</code><br />
+<code>#include &lt;llvm/Support/Path.h&gt;</code><br />
+<code>#include &lt;llvm/Support/ErrorOr.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="typecheck_8h_source.html">typecheck.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="c-import_8h_source.html">c-import.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="type_8h_source.html">../ast/type.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="expr_8h_source.html">../ast/expr.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="decl_8h_source.html">../ast/decl.h</a>&quot;</code><br />
-<code>#include &quot;../parser/parser.hpp&quot;</code><br />
-<code>#include &quot;<a class="el" href="utility_8h_source.html">../driver/utility.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mangle_8h_source.html">../irgen/mangle.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="module_8h_source.html">../ast/module.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="mangle_8h_source.html">../ast/mangle.h</a>&quot;</code><br />
+<code>#include &quot;../package-manager/manifest.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="utility_8h_source.html">../support/utility.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for typecheck.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="typecheck_8cpp__incl.svg" width="2447" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 0 -->
 </div>
-</div></div><!-- contents -->
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacedelta"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html">delta</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5b71fa6cf2aa186549bfcddcff3df3d8"><td class="memItemLeft" align="right" valign="top">llvm::ArrayRef&lt; std::shared_ptr&lt; <a class="el" href="classdelta_1_1_module.html">Module</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="typecheck_8cpp.html#a5b71fa6cf2aa186549bfcddcff3df3d8">getStdlibModules</a> ()</td></tr>
+<tr class="separator:a5b71fa6cf2aa186549bfcddcff3df3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd61f00ed38f65b865c4033b48457760"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="typecheck_8cpp.html#acd61f00ed38f65b865c4033b48457760">allPathsReturn</a> (llvm::ArrayRef&lt; std::unique_ptr&lt; <a class="el" href="classdelta_1_1_stmt.html">Stmt</a> &gt;&gt; block)</td></tr>
+<tr class="separator:acd61f00ed38f65b865c4033b48457760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9ee9f40f7f3e5f6ebd9e8ce4dfd559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="typecheck_8cpp.html#a2c9ee9f40f7f3e5f6ebd9e8ce4dfd559">typecheckFieldDecl</a> (<a class="el" href="classdelta_1_1_field_decl.html">FieldDecl</a> &amp;)</td></tr>
+<tr class="separator:a2c9ee9f40f7f3e5f6ebd9e8ce4dfd559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78c0a3cc04fd53b05a8531935d58d81"><td class="memItemLeft" align="right" valign="top">std::error_code&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="typecheck_8cpp.html#ad78c0a3cc04fd53b05a8531935d58d81">parseSourcesInDirectoryRecursively</a> (llvm::StringRef directoryPath, <a class="el" href="classdelta_1_1_module.html">Module</a> &amp;module, <a class="el" href="namespacedelta.html#a29e22284edc4168428e98c7562e4ee6b">ParserFunction</a> &amp;parse)</td></tr>
+<tr class="separator:ad78c0a3cc04fd53b05a8531935d58d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab417bb720a37330c53ef816b9d61711c"><td class="memItemLeft" align="right" valign="top">llvm::ErrorOr&lt; const <a class="el" href="classdelta_1_1_module.html">Module</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="typecheck_8cpp.html#ab417bb720a37330c53ef816b9d61711c">importDeltaModule</a> (<a class="el" href="classdelta_1_1_source_file.html">SourceFile</a> *importer, const PackageManifest *manifest, llvm::ArrayRef&lt; std::string &gt; importSearchPaths, <a class="el" href="namespacedelta.html#a29e22284edc4168428e98c7562e4ee6b">ParserFunction</a> &amp;parse, llvm::StringRef moduleExternalName, llvm::StringRef moduleInternalName=&quot;&quot;)</td></tr>
+<tr class="separator:ab417bb720a37330c53ef816b9d61711c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="acd61f00ed38f65b865c4033b48457760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd61f00ed38f65b865c4033b48457760">&#9670;&nbsp;</a></span>allPathsReturn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool allPathsReturn </td>
+          <td>(</td>
+          <td class="paramtype">llvm::ArrayRef&lt; std::unique_ptr&lt; <a class="el" href="classdelta_1_1_stmt.html">Stmt</a> &gt;&gt;&#160;</td>
+          <td class="paramname"><em>block</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b71fa6cf2aa186549bfcddcff3df3d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b71fa6cf2aa186549bfcddcff3df3d8">&#9670;&nbsp;</a></span>getStdlibModules()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">llvm::ArrayRef&lt;std::shared_ptr&lt;<a class="el" href="classdelta_1_1_module.html">Module</a>&gt; &gt; getStdlibModules </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab417bb720a37330c53ef816b9d61711c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab417bb720a37330c53ef816b9d61711c">&#9670;&nbsp;</a></span>importDeltaModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">llvm::ErrorOr&lt;const <a class="el" href="classdelta_1_1_module.html">Module</a>&amp;&gt; importDeltaModule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdelta_1_1_source_file.html">SourceFile</a> *&#160;</td>
+          <td class="paramname"><em>importer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const PackageManifest *&#160;</td>
+          <td class="paramname"><em>manifest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">llvm::ArrayRef&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>importSearchPaths</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedelta.html#a29e22284edc4168428e98c7562e4ee6b">ParserFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>parse</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">llvm::StringRef&#160;</td>
+          <td class="paramname"><em>moduleExternalName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">llvm::StringRef&#160;</td>
+          <td class="paramname"><em>moduleInternalName</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="ad78c0a3cc04fd53b05a8531935d58d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad78c0a3cc04fd53b05a8531935d58d81">&#9670;&nbsp;</a></span>parseSourcesInDirectoryRecursively()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::error_code parseSourcesInDirectoryRecursively </td>
+          <td>(</td>
+          <td class="paramtype">llvm::StringRef&#160;</td>
+          <td class="paramname"><em>directoryPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classdelta_1_1_module.html">Module</a> &amp;&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedelta.html#a29e22284edc4168428e98c7562e4ee6b">ParserFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>parse</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 2 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a2c9ee9f40f7f3e5f6ebd9e8ce4dfd559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c9ee9f40f7f3e5f6ebd9e8ce4dfd559">&#9670;&nbsp;</a></span>typecheckFieldDecl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void typecheckFieldDecl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdelta_1_1_field_decl.html">FieldDecl</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 3 -->
+</div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

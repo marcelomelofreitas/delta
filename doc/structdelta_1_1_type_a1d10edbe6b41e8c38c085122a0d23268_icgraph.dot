@@ -1,0 +1,11 @@
+digraph "delta::Type::removePointer"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node542 [label="delta::Type::removePointer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node542 -> Node543 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node543 [label="isSizedArrayToUnsizedArray\lRefConversion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$irgen-expr_8cpp.html#a2a9c0af458308795c28f54640446b93d"];
+  Node542 -> Node544 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node544 [label="delta::IRGenerator\l::resolveTypePlaceholder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdelta_1_1_i_r_generator.html#a3dcb9317d090022c47d62a2df03c46f7"];
+}

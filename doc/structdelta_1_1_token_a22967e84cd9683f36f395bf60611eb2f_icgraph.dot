@@ -1,0 +1,13 @@
+digraph "delta::Token::isCompoundAssignmentOperator"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node22 [label="delta::Token::isCompound\lAssignmentOperator",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node22 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="delta::Token::isAssignment\lOperator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structdelta_1_1_token.html#a344625b45d0c29ff717d5d8be95433e2"];
+  Node23 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="delta::Token::is",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structdelta_1_1_token.html#ada52d2e13d06ef1036a3c5b409617a32"];
+  Node24 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

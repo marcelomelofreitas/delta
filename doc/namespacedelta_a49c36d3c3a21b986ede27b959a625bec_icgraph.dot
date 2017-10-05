@@ -1,0 +1,29 @@
+digraph "delta::printErrorAndExit"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node124 [label="delta::printErrorAndExit",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node124 -> Node125 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node125 [label="delta::checkFlag",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedelta.html#a1e6b30b7e3dd1a2a15650544b8c24cf5",tooltip="If args contains flag, removes it and returns true, otherwise returns false. "];
+  Node125 -> Node126 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node126 [label="delta::buildExecutable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedelta.html#aea63e33d3ee2ff18ad7c1fefd8bbeca2"];
+  Node126 -> Node127 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node127 [label="delta::buildPackage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedelta.html#a608f3203f47e224f518306b184b5cf60"];
+  Node124 -> Node126 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node124 -> Node128 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node128 [label="delta::parse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedelta.html#a9c4f4d520b300cb9e9505201fbf99796"];
+  Node128 -> Node126 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node128 -> Node129 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node129 [label="parseSourcesInDirectoryRecursively",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$typecheck_8cpp.html#ad78c0a3cc04fd53b05a8531935d58d81"];
+  Node129 -> Node130 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node130 [label="importDeltaModule",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$typecheck_8cpp.html#ab417bb720a37330c53ef816b9d61711c"];
+  Node130 -> Node131 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node131 [label="delta::typecheckModule",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedelta.html#a640468ebe486aee02501f76f96781f90"];
+  Node131 -> Node126 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node131 -> Node130 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node128 -> Node130 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node128 -> Node132 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node132 [label="delta::TypeChecker\l::getCurrentSourceFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdelta_1_1_type_checker.html#a61722628430b459b27473211eeaa40c6"];
+  Node124 -> Node131 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

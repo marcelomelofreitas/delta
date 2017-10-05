@@ -65,7 +65,6 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle">
 <div class="title">decl.h File Reference</div>  </div>
@@ -74,20 +73,24 @@ $(function() {
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;boost/variant.hpp&gt;</code><br />
+<code>#include &lt;llvm/ADT/SmallVector.h&gt;</code><br />
+<code>#include &lt;llvm/Support/Casting.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="expr_8h_source.html">expr.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="stmt_8h_source.html">stmt.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="type_8h_source.html">type.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="srcloc_8h_source.html">srcloc.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="location_8h_source.html">location.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="utility_8h_source.html">../support/utility.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for decl.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="decl_8h__incl.svg" width="1018" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 0 -->
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="decl_8h__dep__incl.svg" width="1288" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 -->
+</div>
 </div>
 </div>
 <p><a href="decl_8h_source.html">Go to the source code of this file.</a></p>
@@ -100,9 +103,13 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_generic_param_decl.html">delta::GenericParamDecl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_func_decl.html">delta::FuncDecl</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_function_proto.html">delta::FunctionProto</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_generic_func_decl.html">delta::GenericFuncDecl</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_function_like_decl.html">delta::FunctionLikeDecl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_function_decl.html">delta::FunctionDecl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_method_decl.html">delta::MethodDecl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_init_decl.html">delta::InitDecl</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,18 +129,13 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacedelta"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html">delta</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a03aa380d4ab8e625e9f247fdee4f7eae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="decl_8h.html#a03aa380d4ab8e625e9f247fdee4f7eae">DEFINE_DECL_IS_AND_GET</a>(KIND)</td></tr>
-<tr class="separator:a03aa380d4ab8e625e9f247fdee4f7eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:aa91719634d1f85785061b88b65e41a2d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#aa91719634d1f85785061b88b65e41a2d">delta::DeclKind</a> { <br />
 &#160;&#160;<a class="el" href="namespacedelta.html#aa91719634d1f85785061b88b65e41a2dad9350aa3df52077a042dd7814d7fa752">delta::DeclKind::ParamDecl</a>, 
-<a class="el" href="namespacedelta.html#aa91719634d1f85785061b88b65e41a2da9fe719c1cd3f4e2c6c1c770f31264c50">delta::DeclKind::FuncDecl</a>, 
 <a class="el" href="namespacedelta.html#aa91719634d1f85785061b88b65e41a2da8ee2e55216b11a3432387b433d4969a5">delta::DeclKind::GenericParamDecl</a>, 
-<a class="el" href="namespacedelta.html#aa91719634d1f85785061b88b65e41a2dabd9b6a9759ff9cf574950b6628f6679c">delta::DeclKind::GenericFuncDecl</a>, 
+<a class="el" href="namespacedelta.html#aa91719634d1f85785061b88b65e41a2daeaf52621c7293be9aea1386772f53ea5">delta::DeclKind::FunctionDecl</a>, 
+<a class="el" href="namespacedelta.html#aa91719634d1f85785061b88b65e41a2dab7e57cf7872d3e0bd9cc11ce8926de09">delta::DeclKind::MethodDecl</a>, 
 <br />
 &#160;&#160;<a class="el" href="namespacedelta.html#aa91719634d1f85785061b88b65e41a2dacef2d4df06f76632f8051d548e8c0f57">delta::DeclKind::InitDecl</a>, 
 <a class="el" href="namespacedelta.html#aa91719634d1f85785061b88b65e41a2dae0a591b1d5b05a6ee7adc2d590160d83">delta::DeclKind::DeinitDecl</a>, 
@@ -146,29 +148,12 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="separator:aa91719634d1f85785061b88b65e41a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a324fa4f64880bbf869fba3fca13bbe46"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a324fa4f64880bbf869fba3fca13bbe46">delta::TypeTag</a> { <a class="el" href="namespacedelta.html#a324fa4f64880bbf869fba3fca13bbe46a886ef5dbd655a6c97726d7091c6b173e">delta::TypeTag::Struct</a>, 
-<a class="el" href="namespacedelta.html#a324fa4f64880bbf869fba3fca13bbe46a9bd81329febf6efe22788e03ddeaf0af">delta::TypeTag::Class</a>
+<a class="el" href="namespacedelta.html#a324fa4f64880bbf869fba3fca13bbe46a9bd81329febf6efe22788e03ddeaf0af">delta::TypeTag::Class</a>, 
+<a class="el" href="namespacedelta.html#a324fa4f64880bbf869fba3fca13bbe46a3c1aac82863ed9e5a9aca8ce687f711d">delta::TypeTag::Interface</a>, 
+<a class="el" href="namespacedelta.html#a324fa4f64880bbf869fba3fca13bbe46aaef12e903e606a4895a16b393bfdec8c">delta::TypeTag::Union</a>
  }</td></tr>
 <tr class="separator:a324fa4f64880bbf869fba3fca13bbe46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a03aa380d4ab8e625e9f247fdee4f7eae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03aa380d4ab8e625e9f247fdee4f7eae">&#9670;&nbsp;</a></span>DEFINE_DECL_IS_AND_GET</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DEFINE_DECL_IS_AND_GET</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">KIND</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordtype">bool</span> is##KIND()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> getKind() == DeclKind::KIND; } \</div><div class="line">    class KIND&amp; <span class="keyword">get</span>##KIND() { <span class="keywordflow">return</span> llvm::cast&lt;class KIND&gt;(*this); } \</div><div class="line">    const <span class="keyword">class </span>KIND&amp; <span class="keyword">get</span>##KIND()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> llvm::cast&lt;class KIND&gt;(*this); }</div></div><!-- fragment -->
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

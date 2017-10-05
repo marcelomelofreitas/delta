@@ -1,6 +1,0 @@
-<map id="delta::Type::isTupleType" name="delta::Type::isTupleType">
-<area shape="rect" id="node2" href="$structdelta_1_1_type.html#ae63c22497da399541f7cc9762ad339d5" title="delta::Type::appendType" alt="" coords="219,5,386,31"/>
-<area shape="rect" id="node3" href="$structdelta_1_1_type.html#a16a719104a088d92388e5a5d0f28981f" title="delta::Type::isImplicitly\lConvertibleTo" alt="" coords="225,79,380,117"/>
-<area shape="rect" id="node4" href="$namespacedelta.html#ad62d6b2e68bcdebd01b3e7bc4f905c22" title="delta::operator==" alt="" coords="241,141,364,167"/>
-<area shape="rect" id="node5" href="$classdelta_1_1_ptr_type.html#ada68d169a87da36cc9a55a3d1ba12d00" title="delta::PtrType::classof" alt="" coords="434,141,587,167"/>
-</map>

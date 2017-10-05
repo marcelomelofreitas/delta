@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stmtkind',['StmtKind',['../namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9',1,'delta']]]
+  ['precedencegroup',['PrecedenceGroup',['../token_8cpp.html#a31260f4369c75477d017a6b377622f2c',1,'token.cpp']]]
 ];

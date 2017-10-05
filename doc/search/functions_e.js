@@ -1,8 +1,26 @@
 var searchData=
 [
-  ['tostring',['toString',['../structdelta_1_1_type.html#a98ef8c2e4a833d7c8db893fd14f9e466',1,'delta::Type']]],
-  ['type',['Type',['../structdelta_1_1_type.html#adcfc48be92303f81a6b425c29a899142',1,'delta::Type::Type()=default'],['../structdelta_1_1_type.html#abd737bd0827dfeec7533ade041892c98',1,'delta::Type::Type(const TypeBase *typeBase, bool isMutable=false)']]],
-  ['typebase',['TypeBase',['../classdelta_1_1_type_base.html#a4869a82b97116ed24e6e807c52ff2ac0',1,'delta::TypeBase']]],
-  ['typecheck',['typecheck',['../namespacedelta.html#a06b1e31f3420c50eaca446f6fcc304b8',1,'delta']]],
-  ['typedecl',['TypeDecl',['../classdelta_1_1_type_decl.html#a4dba56dc874d382f4479abbeb0867764',1,'delta::TypeDecl']]]
+  ['scope',['Scope',['../structdelta_1_1_scope.html#a865903efc47028b0c5d4c97548bc3289',1,'delta::Scope']]],
+  ['setbody',['setBody',['../classdelta_1_1_function_like_decl.html#aff58e1c53c2038e3f39e899effc1450d',1,'delta::FunctionLikeDecl']]],
+  ['setcalleedecl',['setCalleeDecl',['../classdelta_1_1_call_expr.html#a3aa1bef3ef762170b0e6c7bc2d13f30d',1,'delta::CallExpr::setCalleeDecl()'],['../classdelta_1_1_binary_expr.html#aeef5a3696f115472b242b6a1eac72539',1,'delta::BinaryExpr::setCalleeDecl()']]],
+  ['setdecl',['setDecl',['../classdelta_1_1_var_expr.html#a0af2eeaf574e3a8db8f4aac63df6141f',1,'delta::VarExpr']]],
+  ['setdecls',['setDecls',['../classdelta_1_1_source_file.html#a5c2d3c8d02afb1e5917532b7c3d3e0be',1,'delta::SourceFile']]],
+  ['setgenericargs',['setGenericArgs',['../classdelta_1_1_call_expr.html#a84948312c48b6d19d9228b709ed4f88c',1,'delta::CallExpr']]],
+  ['setmutable',['setMutable',['../structdelta_1_1_type.html#a7935f877e977179df066345e68fa5347',1,'delta::Type']]],
+  ['setmutating',['setMutating',['../classdelta_1_1_method_decl.html#a1b241f694f57b9e72e84e415b236690f',1,'delta::MethodDecl']]],
+  ['setparent',['setParent',['../classdelta_1_1_param_decl.html#a7cfb03f33430eaeebf7f09064c693518',1,'delta::ParamDecl::setParent()'],['../classdelta_1_1_generic_param_decl.html#a73d699e682ae9214f0c0c0d2535e939f',1,'delta::GenericParamDecl::setParent()']]],
+  ['setreceivertype',['setReceiverType',['../classdelta_1_1_call_expr.html#a294d935110bb1eae3ec2b9cf7eb7e725',1,'delta::CallExpr']]],
+  ['settype',['setType',['../classdelta_1_1_var_decl.html#a56e138007f0160175ccea599e20df8ff',1,'delta::VarDecl::setType()'],['../classdelta_1_1_expr.html#ae35cc2758fc86a57a5ce24ac5435dd3a',1,'delta::Expr::setType()']]],
+  ['settypechecker',['setTypeChecker',['../classdelta_1_1_i_r_generator.html#ac7e131161b2a0bd6343165cbc0ca4fe2',1,'delta::IRGenerator']]],
+  ['signaturematches',['signatureMatches',['../classdelta_1_1_function_decl.html#a0fa029aa49c0b4e6aeb9193a396b2190',1,'delta::FunctionDecl']]],
+  ['skipwhitespace',['skipWhitespace',['../namespacedelta.html#a19941d09d9b9da05c88d7f7039af5be3',1,'delta']]],
+  ['sourcefile',['SourceFile',['../classdelta_1_1_source_file.html#a9faf705f64bac4fb1a4be8c030aef525',1,'delta::SourceFile']]],
+  ['sourcelocation',['SourceLocation',['../structdelta_1_1_source_location.html#a7c53d1ffad6e0f43f53342fca5fe57df',1,'delta::SourceLocation']]],
+  ['statesaver',['StateSaver',['../structdelta_1_1_state_saver.html#a57e7a85f62a8e7f42bc21e2bdd961478',1,'delta::StateSaver']]],
+  ['stmt',['Stmt',['../classdelta_1_1_stmt.html#a246ea08c76c5092ff335a5c7b1390b6d',1,'delta::Stmt']]],
+  ['stringliteralexpr',['StringLiteralExpr',['../classdelta_1_1_string_literal_expr.html#a18706fa5e277db22f9167899f9e49a83',1,'delta::StringLiteralExpr']]],
+  ['subscriptexpr',['SubscriptExpr',['../classdelta_1_1_subscript_expr.html#a567a7aec5b8f960bfb166ec230ca46cd',1,'delta::SubscriptExpr']]],
+  ['switchcase',['SwitchCase',['../classdelta_1_1_switch_case.html#a436864c8884df867d168c9c5712d1569',1,'delta::SwitchCase']]],
+  ['switchstmt',['SwitchStmt',['../classdelta_1_1_switch_stmt.html#ae52f49aab99d8494e0a2bb85e08e4b3b',1,'delta::SwitchStmt']]],
+  ['symboltable',['SymbolTable',['../classdelta_1_1_symbol_table.html#a51954ff37a3040300c8bbeebb56f9542',1,'delta::SymbolTable']]]
 ];

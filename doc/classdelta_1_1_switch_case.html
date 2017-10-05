@@ -63,7 +63,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classdelta_1_1_switch_case-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">delta::SwitchCase Class Reference</div>  </div>
@@ -71,44 +71,100 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="stmt_8h_source.html">stmt.h</a>&gt;</code></p>
-<div class="dynheader">
-Collaboration diagram for delta::SwitchCase:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdelta_1_1_switch_case__coll__graph.svg" width="344" height="323"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a0ff4ac7c45e718bf0b9d62e190d711c6"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classdelta_1_1_expr.html">Expr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_switch_case.html#a0ff4ac7c45e718bf0b9d62e190d711c6">value</a></td></tr>
-<tr class="separator:a0ff4ac7c45e718bf0b9d62e190d711c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad84a78b1bfd94a40a3a04a54fe3b50ba"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classdelta_1_1_stmt.html">Stmt</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_switch_case.html#ad84a78b1bfd94a40a3a04a54fe3b50ba">stmts</a></td></tr>
-<tr class="separator:ad84a78b1bfd94a40a3a04a54fe3b50ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a436864c8884df867d168c9c5712d1569"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_switch_case.html#a436864c8884df867d168c9c5712d1569">SwitchCase</a> (std::unique_ptr&lt; <a class="el" href="classdelta_1_1_expr.html">Expr</a> &gt; value, std::vector&lt; std::unique_ptr&lt; <a class="el" href="classdelta_1_1_stmt.html">Stmt</a> &gt;&gt; &amp;&amp;stmts)</td></tr>
+<tr class="separator:a436864c8884df867d168c9c5712d1569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad067fcbc9fc86bd8eda5b96b75ca43de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdelta_1_1_expr.html">Expr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_switch_case.html#ad067fcbc9fc86bd8eda5b96b75ca43de">getValue</a> () const</td></tr>
+<tr class="separator:ad067fcbc9fc86bd8eda5b96b75ca43de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f0fcde9dad4e79db48e83ccfe397adf"><td class="memItemLeft" align="right" valign="top">llvm::ArrayRef&lt; std::unique_ptr&lt; <a class="el" href="classdelta_1_1_stmt.html">Stmt</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_switch_case.html#a8f0fcde9dad4e79db48e83ccfe397adf">getStmts</a> () const</td></tr>
+<tr class="separator:a8f0fcde9dad4e79db48e83ccfe397adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad84a78b1bfd94a40a3a04a54fe3b50ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad84a78b1bfd94a40a3a04a54fe3b50ba">&#9670;&nbsp;</a></span>stmts</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a436864c8884df867d168c9c5712d1569"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436864c8884df867d168c9c5712d1569">&#9670;&nbsp;</a></span>SwitchCase()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="classdelta_1_1_stmt.html">Stmt</a>&gt; &gt; delta::SwitchCase::stmts</td>
+          <td class="memname">delta::SwitchCase::SwitchCase </td>
+          <td>(</td>
+          <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classdelta_1_1_expr.html">Expr</a> &gt;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::unique_ptr&lt; <a class="el" href="classdelta_1_1_stmt.html">Stmt</a> &gt;&gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>stmts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0ff4ac7c45e718bf0b9d62e190d711c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ff4ac7c45e718bf0b9d62e190d711c6">&#9670;&nbsp;</a></span>value</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8f0fcde9dad4e79db48e83ccfe397adf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f0fcde9dad4e79db48e83ccfe397adf">&#9670;&nbsp;</a></span>getStmts()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unique_ptr&lt;<a class="el" href="classdelta_1_1_expr.html">Expr</a>&gt; delta::SwitchCase::value</td>
+          <td class="memname">llvm::ArrayRef&lt;std::unique_ptr&lt;<a class="el" href="classdelta_1_1_stmt.html">Stmt</a>&gt; &gt; delta::SwitchCase::getStmts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad067fcbc9fc86bd8eda5b96b75ca43de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad067fcbc9fc86bd8eda5b96b75ca43de">&#9670;&nbsp;</a></span>getValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdelta_1_1_expr.html">Expr</a>* delta::SwitchCase::getValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

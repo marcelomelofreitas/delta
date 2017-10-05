@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['strliteralexpr',['StrLiteralExpr',['../namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a86ca685899637dc2470d7d3134715f0d',1,'delta']]],
-  ['struct',['Struct',['../namespacedelta.html#a324fa4f64880bbf869fba3fca13bbe46a886ef5dbd655a6c97726d7091c6b173e',1,'delta']]],
-  ['subscriptexpr',['SubscriptExpr',['../namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a89c8c7292e4f424e1f7cf18bf13f4e2e',1,'delta']]],
-  ['switchstmt',['SwitchStmt',['../namespacedelta.html#a962a69e45a36ef9445118f0a440f06d9ae36f57296561755af4e03553b55fa99c',1,'delta']]]
+  ['paramdecl',['ParamDecl',['../namespacedelta.html#aa91719634d1f85785061b88b65e41a2dad9350aa3df52077a042dd7814d7fa752',1,'delta']]],
+  ['plus',['PLUS',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036ea860d1fbf439e855d674c7a10f9fe7536',1,'delta']]],
+  ['plus_5feq',['PLUS_EQ',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036ea5674b33da991dfa04f8935b0a86fe99d',1,'delta']]],
+  ['pointertype',['PointerType',['../namespacedelta.html#a520500b76b205d3992544b07c3da8e7dae385c38bb67ea909198e13ee23c21028',1,'delta']]],
+  ['prefixexpr',['PrefixExpr',['../namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322acccc7f84f16c787fa994aa70011641b1',1,'delta']]]
 ];

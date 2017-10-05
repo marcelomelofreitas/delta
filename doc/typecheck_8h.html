@@ -63,49 +63,58 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">typecheck.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="expr_8h_source.html">../ast/expr.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="decl_8h_source.html">../ast/decl.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stmt_8h_source.html">../ast/stmt.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="type-resolver_8h_source.html">../ast/type-resolver.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for typecheck.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="typecheck_8h__incl.svg" width="162" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 0 -->
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="typecheck_8h__dep__incl.svg" width="664" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 -->
+</div>
 </div>
 </div>
 <p><a href="typecheck_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_type_checker.html">delta::TypeChecker</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespacedelta"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html">delta</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a29e22284edc4168428e98c7562e4ee6b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a29e22284edc4168428e98c7562e4ee6b">delta::ParserFunction</a> = void(llvm::StringRef filePath, Module &amp;module)</td></tr>
+<tr class="separator:a29e22284edc4168428e98c7562e4ee6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa177c1257b262c2aeb1286821a0e3766"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#aa177c1257b262c2aeb1286821a0e3766">delta::addToSymbolTable</a> (const <a class="el" href="classdelta_1_1_func_decl.html">FuncDecl</a> &amp;decl)</td></tr>
-<tr class="separator:aa177c1257b262c2aeb1286821a0e3766"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a021580d411f6786eab0f127b430b466f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a021580d411f6786eab0f127b430b466f">delta::addToSymbolTable</a> (const <a class="el" href="classdelta_1_1_generic_func_decl.html">GenericFuncDecl</a> &amp;decl)</td></tr>
-<tr class="separator:a021580d411f6786eab0f127b430b466f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf78cd71ca70d4a49c0e9c3ac2e06d87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#abf78cd71ca70d4a49c0e9c3ac2e06d87">delta::addToSymbolTable</a> (const <a class="el" href="classdelta_1_1_init_decl.html">InitDecl</a> &amp;decl)</td></tr>
-<tr class="separator:abf78cd71ca70d4a49c0e9c3ac2e06d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee04758561a6b4ea9f4ad0a2ace54f96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#aee04758561a6b4ea9f4ad0a2ace54f96">delta::addToSymbolTable</a> (const <a class="el" href="classdelta_1_1_deinit_decl.html">DeinitDecl</a> &amp;decl)</td></tr>
-<tr class="separator:aee04758561a6b4ea9f4ad0a2ace54f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed4af88f952a2688525a9b5d5c642a1a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#aed4af88f952a2688525a9b5d5c642a1a">delta::addToSymbolTable</a> (const <a class="el" href="classdelta_1_1_type_decl.html">TypeDecl</a> &amp;decl)</td></tr>
-<tr class="separator:aed4af88f952a2688525a9b5d5c642a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e520a2202ca3c619fd294dbeea058e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a9e520a2202ca3c619fd294dbeea058e4">delta::addToSymbolTable</a> (const <a class="el" href="classdelta_1_1_var_decl.html">VarDecl</a> &amp;decl)</td></tr>
-<tr class="separator:a9e520a2202ca3c619fd294dbeea058e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbcc11c583968bc13aa34e5c3d58e54b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdelta_1_1_decl.html">Decl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#afbcc11c583968bc13aa34e5c3d58e54b">delta::findInSymbolTable</a> (llvm::StringRef name, <a class="el" href="structdelta_1_1_src_loc.html">SrcLoc</a> srcLoc)</td></tr>
-<tr class="separator:afbcc11c583968bc13aa34e5c3d58e54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06b1e31f3420c50eaca446f6fcc304b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a06b1e31f3420c50eaca446f6fcc304b8">delta::typecheck</a> (std::vector&lt; std::unique_ptr&lt; <a class="el" href="classdelta_1_1_decl.html">Decl</a> &gt;&gt; &amp;decls, const std::vector&lt; llvm::StringRef &gt; &amp;includePaths)</td></tr>
-<tr class="separator:a06b1e31f3420c50eaca446f6fcc304b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949f83e8840a11b90a369f9b2278ba0a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classdelta_1_1_module.html">Module</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a949f83e8840a11b90a369f9b2278ba0a">delta::getAllImportedModules</a> ()</td></tr>
+<tr class="separator:a949f83e8840a11b90a369f9b2278ba0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640468ebe486aee02501f76f96781f90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a640468ebe486aee02501f76f96781f90">delta::typecheckModule</a> (<a class="el" href="classdelta_1_1_module.html">Module</a> &amp;module, const PackageManifest *manifest, llvm::ArrayRef&lt; std::string &gt; importSearchPaths, <a class="el" href="namespacedelta.html#a29e22284edc4168428e98c7562e4ee6b">ParserFunction</a> &amp;parse)</td></tr>
+<tr class="separator:a640468ebe486aee02501f76f96781f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

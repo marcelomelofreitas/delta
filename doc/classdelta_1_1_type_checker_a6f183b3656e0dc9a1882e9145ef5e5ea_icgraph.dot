@@ -1,0 +1,16 @@
+digraph "delta::TypeChecker::typecheckTopLevelDecl"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node52 [label="delta::TypeChecker\l::typecheckTopLevelDecl",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node52 -> Node53 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node53 [label="delta::typecheckModule",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedelta.html#a640468ebe486aee02501f76f96781f90"];
+  Node53 -> Node54 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node54 [label="delta::buildExecutable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedelta.html#aea63e33d3ee2ff18ad7c1fefd8bbeca2"];
+  Node54 -> Node55 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node55 [label="delta::buildPackage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedelta.html#a608f3203f47e224f518306b184b5cf60"];
+  Node53 -> Node56 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node56 [label="importDeltaModule",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$typecheck_8cpp.html#ab417bb720a37330c53ef816b9d61711c"];
+  Node56 -> Node53 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

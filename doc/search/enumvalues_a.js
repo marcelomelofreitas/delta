@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['paramdecl',['ParamDecl',['../namespacedelta.html#aa91719634d1f85785061b88b65e41a2dad9350aa3df52077a042dd7814d7fa752',1,'delta']]],
-  ['prefixexpr',['PrefixExpr',['../namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322acccc7f84f16c787fa994aa70011641b1',1,'delta']]],
-  ['ptrtype',['PtrType',['../namespacedelta.html#a520500b76b205d3992544b07c3da8e7da6ccd7e8349f5398519593d8760dfcde7',1,'delta']]]
+  ['ne',['NE',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036ea1d3266ccdf97f6c2990bc4e59f36f627',1,'delta']]],
+  ['newline',['NEWLINE',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036ea9c3fa7199c4c74a7dc6996c5cb17e9c6',1,'delta']]],
+  ['no_5ftoken',['NO_TOKEN',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036eacf057351562e1705d709a308d17b15dd',1,'delta']]],
+  ['not',['NOT',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036ea328c3f8a73b2f35dce0c40ebc09052da',1,'delta']]],
+  ['null_5fliteral',['NULL_LITERAL',['../namespacedelta.html#a2c180fa4fc8893d862b5517016c7036eacfdf3742e8a2e78971ea11d59678585c',1,'delta']]],
+  ['nullliteralexpr',['NullLiteralExpr',['../namespacedelta.html#a70b6b5e67ca61f37766425b74a1e4322a660988abeb028f3c6733a1320e094e79',1,'delta']]]
 ];

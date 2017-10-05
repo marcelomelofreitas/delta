@@ -65,7 +65,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classdelta_1_1_param_decl-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">delta::ParamDecl Class Reference</div>  </div>
@@ -76,41 +75,68 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for delta::ParamDecl:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdelta_1_1_param_decl__inherit__graph.svg" width="135" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 0 -->
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for delta::ParamDecl:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classdelta_1_1_param_decl__coll__graph.svg" width="456" height="224"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 -->
+</div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7bdab1e2d7c145f183af236c0c696f95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_param_decl.html#a7bdab1e2d7c145f183af236c0c696f95">ParamDecl</a> (std::string &amp;&amp;<a class="el" href="classdelta_1_1_param_decl.html#a69e9439166da589d9fdcc21a8fefc29b">label</a>, <a class="el" href="structdelta_1_1_type.html">Type</a> <a class="el" href="classdelta_1_1_param_decl.html#aea182b674d96cb17ed32fb671a055e1b">type</a>, std::string &amp;&amp;<a class="el" href="classdelta_1_1_param_decl.html#aa8b090484885ebb8ff009ae18cefa2b6">name</a>, <a class="el" href="structdelta_1_1_src_loc.html">SrcLoc</a> <a class="el" href="classdelta_1_1_param_decl.html#a43e3d084dfdb7be9a329e92da43cfe4b">srcLoc</a>)</td></tr>
-<tr class="separator:a7bdab1e2d7c145f183af236c0c696f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a17d5e9fe8d388bb9223ee1092437ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_param_decl.html#a2a17d5e9fe8d388bb9223ee1092437ed">ParamDecl</a> (<a class="el" href="structdelta_1_1_type.html">Type</a> type, std::string &amp;&amp;name, <a class="el" href="structdelta_1_1_source_location.html">SourceLocation</a> location)</td></tr>
+<tr class="separator:a2a17d5e9fe8d388bb9223ee1092437ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e5e904d797339d13886b13657c5cee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdelta_1_1_type.html">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_param_decl.html#a54e5e904d797339d13886b13657c5cee">getType</a> () const</td></tr>
+<tr class="separator:a54e5e904d797339d13886b13657c5cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560929b7f09ffb18659b85b0ffc1ff42"><td class="memItemLeft" align="right" valign="top">llvm::StringRef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_param_decl.html#a560929b7f09ffb18659b85b0ffc1ff42">getName</a> () const</td></tr>
+<tr class="separator:a560929b7f09ffb18659b85b0ffc1ff42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf919b673c9c50b4c62f3e1d8d51c62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdelta_1_1_function_like_decl.html">FunctionLikeDecl</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_param_decl.html#abaf919b673c9c50b4c62f3e1d8d51c62">getParent</a> () const</td></tr>
+<tr class="separator:abaf919b673c9c50b4c62f3e1d8d51c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cfb03f33430eaeebf7f09064c693518"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_param_decl.html#a7cfb03f33430eaeebf7f09064c693518">setParent</a> (<a class="el" href="classdelta_1_1_function_like_decl.html">FunctionLikeDecl</a> *parent)</td></tr>
+<tr class="separator:a7cfb03f33430eaeebf7f09064c693518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe2927e09bbaf4c1cb174bbe70e9bf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdelta_1_1_source_location.html">SourceLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_param_decl.html#a8fe2927e09bbaf4c1cb174bbe70e9bf4">getLocation</a> () const</td></tr>
+<tr class="separator:a8fe2927e09bbaf4c1cb174bbe70e9bf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3914d56694be53500c2ecb4a8bac67fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_param_decl.html#a3914d56694be53500c2ecb4a8bac67fa">operator==</a> (const <a class="el" href="classdelta_1_1_param_decl.html">ParamDecl</a> &amp;other) const</td></tr>
+<tr class="separator:a3914d56694be53500c2ecb4a8bac67fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classdelta_1_1_decl"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classdelta_1_1_decl')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classdelta_1_1_decl.html">delta::Decl</a></td></tr>
 <tr class="memitem:a34699a5a2e545f067437d5da49feee9a inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#a34699a5a2e545f067437d5da49feee9a">~Decl</a> ()=0</td></tr>
 <tr class="separator:a34699a5a2e545f067437d5da49feee9a inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77f4df9beab2d097f17cb252c204c92 inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#af77f4df9beab2d097f17cb252c204c92">isParamDecl</a> () const</td></tr>
+<tr class="separator:af77f4df9beab2d097f17cb252c204c92 inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa14bde09537202baa5b6b8b44f64f149 inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#aa14bde09537202baa5b6b8b44f64f149">isFunctionLikeDecl</a> () const</td></tr>
+<tr class="separator:aa14bde09537202baa5b6b8b44f64f149 inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9683f7c3ad4c6973ef70c0d52641f2a8 inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#a9683f7c3ad4c6973ef70c0d52641f2a8">isFunctionDecl</a> () const</td></tr>
+<tr class="separator:a9683f7c3ad4c6973ef70c0d52641f2a8 inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2486222bcdc4acbbc17389017fc227 inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#aff2486222bcdc4acbbc17389017fc227">isMethodDecl</a> () const</td></tr>
+<tr class="separator:aff2486222bcdc4acbbc17389017fc227 inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f076c366770216328b152e8596b8440 inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#a9f076c366770216328b152e8596b8440">isGenericParamDecl</a> () const</td></tr>
+<tr class="separator:a9f076c366770216328b152e8596b8440 inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93fc582358cc8838ae00e07a7f6bbf5a inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#a93fc582358cc8838ae00e07a7f6bbf5a">isInitDecl</a> () const</td></tr>
+<tr class="separator:a93fc582358cc8838ae00e07a7f6bbf5a inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e78d5facbf65158f023e43f78c3a26d inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#a9e78d5facbf65158f023e43f78c3a26d">isDeinitDecl</a> () const</td></tr>
+<tr class="separator:a9e78d5facbf65158f023e43f78c3a26d inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a511b2a82571a8f16a3f7d8f709be1f98 inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#a511b2a82571a8f16a3f7d8f709be1f98">isTypeDecl</a> () const</td></tr>
+<tr class="separator:a511b2a82571a8f16a3f7d8f709be1f98 inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af97fd2328222cde564e358961e053bce inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#af97fd2328222cde564e358961e053bce">isVarDecl</a> () const</td></tr>
+<tr class="separator:af97fd2328222cde564e358961e053bce inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba39f7615b217997724719b1c414ecd inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#a6ba39f7615b217997724719b1c414ecd">isFieldDecl</a> () const</td></tr>
+<tr class="separator:a6ba39f7615b217997724719b1c414ecd inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518f7798871d861910a204884d0a2306 inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#a518f7798871d861910a204884d0a2306">isImportDecl</a> () const</td></tr>
+<tr class="separator:a518f7798871d861910a204884d0a2306 inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c8616b3b9ace7e2da4953f2d951f81c inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedelta.html#aa91719634d1f85785061b88b65e41a2d">DeclKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#a3c8616b3b9ace7e2da4953f2d951f81c">getKind</a> () const</td></tr>
 <tr class="separator:a3c8616b3b9ace7e2da4953f2d951f81c inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a905b8ed13cd2a6a490a96dcdfaf3ca73 inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdelta_1_1_src_loc.html">SrcLoc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#a905b8ed13cd2a6a490a96dcdfaf3ca73">getSrcLoc</a> () const</td></tr>
-<tr class="separator:a905b8ed13cd2a6a490a96dcdfaf3ca73 inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a21dc3399af73db084503345f2eb26 inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdelta_1_1_module.html">Module</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#a10a21dc3399af73db084503345f2eb26">getModule</a> () const</td></tr>
+<tr class="separator:a10a21dc3399af73db084503345f2eb26 inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6cd479279d6c58ae0c61a8aca548b4 inherit pub_methods_classdelta_1_1_decl"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdelta_1_1_source_location.html">SourceLocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_decl.html#aee6cd479279d6c58ae0c61a8aca548b4">getLocation</a> () const</td></tr>
+<tr class="separator:aee6cd479279d6c58ae0c61a8aca548b4 inherit pub_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1cf96d3550d8a4dd4c3d9af14b5d27f4"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_param_decl.html#a1cf96d3550d8a4dd4c3d9af14b5d27f4">classof</a> (const <a class="el" href="classdelta_1_1_decl.html">Decl</a> *d)</td></tr>
 <tr class="separator:a1cf96d3550d8a4dd4c3d9af14b5d27f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a69e9439166da589d9fdcc21a8fefc29b"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_param_decl.html#a69e9439166da589d9fdcc21a8fefc29b">label</a></td></tr>
-<tr class="separator:a69e9439166da589d9fdcc21a8fefc29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea182b674d96cb17ed32fb671a055e1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdelta_1_1_type.html">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_param_decl.html#aea182b674d96cb17ed32fb671a055e1b">type</a></td></tr>
-<tr class="separator:aea182b674d96cb17ed32fb671a055e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8b090484885ebb8ff009ae18cefa2b6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_param_decl.html#aa8b090484885ebb8ff009ae18cefa2b6">name</a></td></tr>
-<tr class="separator:aa8b090484885ebb8ff009ae18cefa2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43e3d084dfdb7be9a329e92da43cfe4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdelta_1_1_src_loc.html">SrcLoc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_param_decl.html#a43e3d084dfdb7be9a329e92da43cfe4b">srcLoc</a></td></tr>
-<tr class="separator:a43e3d084dfdb7be9a329e92da43cfe4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -119,8 +145,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a6b1afe3aafc95b577f9c8091d22195dd inherit pro_methods_classdelta_1_1_decl"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7bdab1e2d7c145f183af236c0c696f95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bdab1e2d7c145f183af236c0c696f95">&#9670;&nbsp;</a></span>ParamDecl()</h2>
+<a id="a2a17d5e9fe8d388bb9223ee1092437ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a17d5e9fe8d388bb9223ee1092437ed">&#9670;&nbsp;</a></span>ParamDecl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,12 +157,6 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">delta::ParamDecl::ParamDecl </td>
           <td>(</td>
-          <td class="paramtype">std::string &amp;&amp;&#160;</td>
-          <td class="paramname"><em>label</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="structdelta_1_1_type.html">Type</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
@@ -149,8 +169,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structdelta_1_1_src_loc.html">SrcLoc</a>&#160;</td>
-          <td class="paramname"><em>srcLoc</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structdelta_1_1_source_location.html">SourceLocation</a>&#160;</td>
+          <td class="paramname"><em>location</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -194,59 +214,172 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a69e9439166da589d9fdcc21a8fefc29b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69e9439166da589d9fdcc21a8fefc29b">&#9670;&nbsp;</a></span>label</h2>
+<a id="a8fe2927e09bbaf4c1cb174bbe70e9bf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fe2927e09bbaf4c1cb174bbe70e9bf4">&#9670;&nbsp;</a></span>getLocation()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string delta::ParamDecl::label</td>
+          <td class="memname"><a class="el" href="structdelta_1_1_source_location.html">SourceLocation</a> delta::ParamDecl::getLocation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 2 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a560929b7f09ffb18659b85b0ffc1ff42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a560929b7f09ffb18659b85b0ffc1ff42">&#9670;&nbsp;</a></span>getName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">llvm::StringRef delta::ParamDecl::getName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 3 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="abaf919b673c9c50b4c62f3e1d8d51c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abaf919b673c9c50b4c62f3e1d8d51c62">&#9670;&nbsp;</a></span>getParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdelta_1_1_function_like_decl.html">FunctionLikeDecl</a>* delta::ParamDecl::getParent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa8b090484885ebb8ff009ae18cefa2b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8b090484885ebb8ff009ae18cefa2b6">&#9670;&nbsp;</a></span>name</h2>
+<a id="a54e5e904d797339d13886b13657c5cee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54e5e904d797339d13886b13657c5cee">&#9670;&nbsp;</a></span>getType()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string delta::ParamDecl::name</td>
+          <td class="memname"><a class="el" href="structdelta_1_1_type.html">Type</a> delta::ParamDecl::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 4 -->
+</div>
+</div>
+
+</div>
+</div>
+<a id="a3914d56694be53500c2ecb4a8bac67fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3914d56694be53500c2ecb4a8bac67fa">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool delta::ParamDecl::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classdelta_1_1_param_decl.html">ParamDecl</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a43e3d084dfdb7be9a329e92da43cfe4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43e3d084dfdb7be9a329e92da43cfe4b">&#9670;&nbsp;</a></span>srcLoc</h2>
+<a id="a7cfb03f33430eaeebf7f09064c693518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cfb03f33430eaeebf7f09064c693518">&#9670;&nbsp;</a></span>setParent()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdelta_1_1_src_loc.html">SrcLoc</a> delta::ParamDecl::srcLoc</td>
+          <td class="memname">void delta::ParamDecl::setParent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classdelta_1_1_function_like_decl.html">FunctionLikeDecl</a> *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aea182b674d96cb17ed32fb671a055e1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea182b674d96cb17ed32fb671a055e1b">&#9670;&nbsp;</a></span>type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="structdelta_1_1_type.html">Type</a> delta::ParamDecl::type</td>
-        </tr>
-      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

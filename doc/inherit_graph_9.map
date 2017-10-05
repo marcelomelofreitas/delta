@@ -1,8 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classdelta_1_1_type_base.html" title="delta::TypeBase" alt="" coords="5,104,122,129"/>
-<area shape="rect" id="node2" href="$classdelta_1_1_array_type.html" title="delta::ArrayType" alt="" coords="171,5,289,31"/>
-<area shape="rect" id="node3" href="$classdelta_1_1_basic_type.html" title="delta::BasicType" alt="" coords="170,55,290,80"/>
-<area shape="rect" id="node4" href="$classdelta_1_1_func_type.html" title="delta::FuncType" alt="" coords="172,104,288,129"/>
-<area shape="rect" id="node5" href="$classdelta_1_1_ptr_type.html" title="delta::PtrType" alt="" coords="178,153,282,179"/>
-<area shape="rect" id="node6" href="$classdelta_1_1_tuple_type.html" title="delta::TupleType" alt="" coords="170,203,290,228"/>
-</map>

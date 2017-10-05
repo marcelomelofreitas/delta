@@ -1,8 +1,0 @@
-<map id="src/driver/utility.h" name="src/driver/utility.h">
-<area shape="rect" id="node2" href="$decl_8cpp.html" title="src/ast/decl.cpp" alt="" coords="5,79,119,104"/>
-<area shape="rect" id="node3" href="$type_8cpp.html" title="src/ast/type.cpp" alt="" coords="144,79,258,104"/>
-<area shape="rect" id="node4" href="$main_8cpp.html" title="src/driver/main.cpp" alt="" coords="282,79,416,104"/>
-<area shape="rect" id="node5" href="$irgen_8cpp.html" title="src/irgen/irgen.cpp" alt="" coords="439,79,570,104"/>
-<area shape="rect" id="node6" href="$lexer_8cpp.html" title="src/parser/lexer.cpp" alt="" coords="595,79,732,104"/>
-<area shape="rect" id="node7" href="$typecheck_8cpp.html" title="src/sema/typecheck.cpp" alt="" coords="756,79,920,104"/>
-</map>

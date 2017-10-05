@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['setmutable',['setMutable',['../structdelta_1_1_type.html#a7114e56c3a2cbb908f77e3a54c3aeb70',1,'delta::Type']]],
-  ['settype',['setType',['../classdelta_1_1_expr.html#ae35cc2758fc86a57a5ce24ac5435dd3a',1,'delta::Expr']]],
-  ['srcloc',['SrcLoc',['../structdelta_1_1_src_loc.html#aaf00ffe6f6cb362e2b0a778e81874cef',1,'delta::SrcLoc']]],
-  ['stmt',['Stmt',['../classdelta_1_1_stmt.html#a246ea08c76c5092ff335a5c7b1390b6d',1,'delta::Stmt']]],
-  ['strliteralexpr',['StrLiteralExpr',['../classdelta_1_1_str_literal_expr.html#a15c3089ff8cc018d03b0c61178ce355b',1,'delta::StrLiteralExpr']]],
-  ['subscriptexpr',['SubscriptExpr',['../classdelta_1_1_subscript_expr.html#a5ce291ce099201746efbccc15a3ca1a4',1,'delta::SubscriptExpr']]],
-  ['switchstmt',['SwitchStmt',['../classdelta_1_1_switch_stmt.html#ae52f49aab99d8494e0a2bb85e08e4b3b',1,'delta::SwitchStmt']]]
+  ['readline',['readLine',['../namespacedelta.html#ac0cf88f3f237830c9134c068cdf867b6',1,'delta']]],
+  ['readlinefromfile',['readLineFromFile',['../namespacedelta.html#a3a4ae2d16d1a3420477ff404618ae1d4',1,'delta']]],
+  ['readword',['readWord',['../namespacedelta.html#af8b1e43ba9ff99117d355c24eb71cd55',1,'delta']]],
+  ['removepointer',['removePointer',['../structdelta_1_1_type.html#a1d10edbe6b41e8c38c085122a0d23268',1,'delta::Type']]],
+  ['replmain',['replMain',['../namespacedelta.html#a951a718c546c5cee0fadf62623d379a5',1,'delta']]],
+  ['resolve',['resolve',['../classdelta_1_1_type_resolver.html#ab333afdac9296c5d62fe58a0b229bba8',1,'delta::TypeResolver']]],
+  ['resolvetypeplaceholder',['resolveTypePlaceholder',['../classdelta_1_1_type_resolver.html#ac5072bf5eec35ae578a6a6b24e85d0a5',1,'delta::TypeResolver::resolveTypePlaceholder()'],['../classdelta_1_1_i_r_generator.html#a3dcb9317d090022c47d62a2df03c46f7',1,'delta::IRGenerator::resolveTypePlaceholder()']]],
+  ['returnstmt',['ReturnStmt',['../classdelta_1_1_return_stmt.html#a499722bac6ce333a7ad8ee5764b13812',1,'delta::ReturnStmt']]]
 ];

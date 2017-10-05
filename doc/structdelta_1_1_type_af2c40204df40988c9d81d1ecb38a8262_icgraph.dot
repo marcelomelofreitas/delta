@@ -1,0 +1,32 @@
+digraph "delta::Type::isBasicType"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node313 [label="delta::Type::isBasicType",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node313 -> Node314 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node314 [label="delta::Type::isImplicitly\lConvertibleTo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structdelta_1_1_type.html#a16a719104a088d92388e5a5d0f28981f"];
+  Node314 -> Node314 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node314 -> Node315 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node315 [label="delta::getAllImportedModules",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedelta.html#a949f83e8840a11b90a369f9b2278ba0a"];
+  Node315 -> Node316 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node316 [label="delta::buildExecutable",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedelta.html#aea63e33d3ee2ff18ad7c1fefd8bbeca2"];
+  Node316 -> Node317 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node317 [label="delta::buildPackage",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedelta.html#a608f3203f47e224f518306b184b5cf60"];
+  Node313 -> Node318 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node318 [label="delta::Type::isSigned",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structdelta_1_1_type.html#a80fde850bedbbf0210860796b1058ff7"];
+  Node318 -> Node319 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node319 [label="isSizedArrayToUnsizedArray\lRefConversion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$irgen-expr_8cpp.html#a2a9c0af458308795c28f54640446b93d"];
+  Node318 -> Node320 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node320 [label="delta::IRGenerator\l::resolveTypePlaceholder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdelta_1_1_i_r_generator.html#a3dcb9317d090022c47d62a2df03c46f7"];
+  Node313 -> Node321 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node321 [label="delta::Type::isUnsigned",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structdelta_1_1_type.html#a5ba720ff9588bbb79f0d093de2f1c3f8"];
+  Node321 -> Node319 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node313 -> Node322 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node322 [label="delta::operator==",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacedelta.html#ad62d6b2e68bcdebd01b3e7bc4f905c22"];
+  Node322 -> Node323 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node323 [label="delta::PointerType\l::classof",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdelta_1_1_pointer_type.html#a1ba1f19b527e4dbb80853eefd1a3f729"];
+  Node313 -> Node319 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node313 -> Node324 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node324 [label="delta::IRGenerator\l::IRGenerator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdelta_1_1_i_r_generator.html#a75b86476f676c86049744a953cef6c55"];
+}

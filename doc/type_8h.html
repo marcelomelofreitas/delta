@@ -77,15 +77,19 @@ $(function() {
 <code>#include &lt;llvm/ADT/ArrayRef.h&gt;</code><br />
 <code>#include &lt;llvm/ADT/StringRef.h&gt;</code><br />
 <code>#include &lt;llvm/Support/Casting.h&gt;</code><br />
+<code>#include &lt;llvm/Support/raw_ostream.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="utility_8h_source.html">../support/utility.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for type.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="type_8h__incl.svg" width="756" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 0 -->
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="type_8h__dep__incl.svg" width="1287" height="330"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 -->
+</div>
 </div>
 </div>
 <p><a href="type_8h_source.html">Go to the source code of this file.</a></p>
@@ -102,9 +106,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_tuple_type.html">delta::TupleType</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_func_type.html">delta::FuncType</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_function_type.html">delta::FunctionType</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_ptr_type.html">delta::PtrType</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdelta_1_1_pointer_type.html">delta::PointerType</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -118,9 +122,9 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="namespacedelta.html#a520500b76b205d3992544b07c3da8e7da917d45f4e63b2ac060d4192914c0c5ad">delta::TypeKind::BasicType</a>, 
 <a class="el" href="namespacedelta.html#a520500b76b205d3992544b07c3da8e7dacb17ff5177bb277ed8dd79480aad9c27">delta::TypeKind::ArrayType</a>, 
 <a class="el" href="namespacedelta.html#a520500b76b205d3992544b07c3da8e7dad624bca482ac0cd8b01e849935e730a7">delta::TypeKind::TupleType</a>, 
-<a class="el" href="namespacedelta.html#a520500b76b205d3992544b07c3da8e7daef19046da6991340c7a0b6cd0bf5236b">delta::TypeKind::FuncType</a>, 
+<a class="el" href="namespacedelta.html#a520500b76b205d3992544b07c3da8e7da929f1f7a270c41cfd9e987b88e048aaf">delta::TypeKind::FunctionType</a>, 
 <br />
-&#160;&#160;<a class="el" href="namespacedelta.html#a520500b76b205d3992544b07c3da8e7da6ccd7e8349f5398519593d8760dfcde7">delta::TypeKind::PtrType</a>
+&#160;&#160;<a class="el" href="namespacedelta.html#a520500b76b205d3992544b07c3da8e7dae385c38bb67ea909198e13ee23c21028">delta::TypeKind::PointerType</a>
 <br />
  }</td></tr>
 <tr class="separator:a520500b76b205d3992544b07c3da8e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,6 +137,8 @@ Functions</h2></td></tr>
 <tr class="separator:ac0b10193ffd4a17a6ff7e448487767ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a679bd697f2c5acfcb9361ff45a7eeef1"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a679bd697f2c5acfcb9361ff45a7eeef1">delta::operator&lt;&lt;</a> (std::ostream &amp;, <a class="el" href="structdelta_1_1_type.html">Type</a>)</td></tr>
 <tr class="separator:a679bd697f2c5acfcb9361ff45a7eeef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa702d6e061a9735d1e305a73479dc445"><td class="memItemLeft" align="right" valign="top">llvm::raw_ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#aa702d6e061a9735d1e305a73479dc445">delta::operator&lt;&lt;</a> (llvm::raw_ostream &amp;, <a class="el" href="structdelta_1_1_type.html">Type</a>)</td></tr>
+<tr class="separator:aa702d6e061a9735d1e305a73479dc445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

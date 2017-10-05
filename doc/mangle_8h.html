@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>delta: src/irgen/mangle.h File Reference</title>
+<title>delta: src/ast/mangle.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -58,7 +58,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b5231b0438093b9678c95afaec75ebe4.html">irgen</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_203e5988f1ed315d29383d699972de6f.html">ast</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -73,12 +73,14 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mangle.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="mangle_8h__incl.svg" width="142" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 0 -->
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="mangle_8h__dep__incl.svg" width="500" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><!-- SVG 1 -->
+</div>
 </div>
 </div>
 <p><a href="mangle_8h_source.html">Go to the source code of this file.</a></p>
@@ -90,16 +92,20 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7d5a60e9ea0d80e2fe4c69af03c81db9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a7d5a60e9ea0d80e2fe4c69af03c81db9">delta::mangle</a> (const <a class="el" href="classdelta_1_1_generic_func_decl.html">GenericFuncDecl</a> &amp;decl, llvm::ArrayRef&lt; <a class="el" href="structdelta_1_1_type.html">Type</a> &gt; genericArgs)</td></tr>
-<tr class="separator:a7d5a60e9ea0d80e2fe4c69af03c81db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abefeea249e7830a48c41a7e576bf0564"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#abefeea249e7830a48c41a7e576bf0564">delta::mangle</a> (const <a class="el" href="classdelta_1_1_init_decl.html">InitDecl</a> &amp;decl)</td></tr>
-<tr class="separator:abefeea249e7830a48c41a7e576bf0564"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdac305daf992c0228c6f0346c4f88ac"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#abdac305daf992c0228c6f0346c4f88ac">delta::mangleInitDecl</a> (llvm::StringRef typeName)</td></tr>
-<tr class="separator:abdac305daf992c0228c6f0346c4f88ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6c2ddf5b58f75de28c6c6931b45b814"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#ab6c2ddf5b58f75de28c6c6931b45b814">delta::mangle</a> (const <a class="el" href="classdelta_1_1_deinit_decl.html">DeinitDecl</a> &amp;decl)</td></tr>
-<tr class="separator:ab6c2ddf5b58f75de28c6c6931b45b814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5722fb9fa4c55afbbd0d8bda79c898a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#ad5722fb9fa4c55afbbd0d8bda79c898a">delta::mangle</a> (const <a class="el" href="classdelta_1_1_function_like_decl.html">FunctionLikeDecl</a> &amp;decl, llvm::ArrayRef&lt; <a class="el" href="structdelta_1_1_type.html">Type</a> &gt; typeGenericArgs={}, llvm::ArrayRef&lt; <a class="el" href="structdelta_1_1_type.html">Type</a> &gt; functionGenericArgs={})</td></tr>
+<tr class="separator:ad5722fb9fa4c55afbbd0d8bda79c898a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af549e4e92101dee22c177bf3e8ff03"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a0af549e4e92101dee22c177bf3e8ff03">delta::mangleFunctionDecl</a> (llvm::StringRef receiverType, llvm::StringRef functionName, llvm::ArrayRef&lt; <a class="el" href="structdelta_1_1_type.html">Type</a> &gt; genericArgs={})</td></tr>
+<tr class="separator:a0af549e4e92101dee22c177bf3e8ff03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a966506a87464decd5d6cfa045c356569"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a966506a87464decd5d6cfa045c356569">delta::mangle</a> (const <a class="el" href="classdelta_1_1_init_decl.html">InitDecl</a> &amp;decl, llvm::ArrayRef&lt; <a class="el" href="structdelta_1_1_type.html">Type</a> &gt; typeGenericArgs={}, llvm::ArrayRef&lt; <a class="el" href="structdelta_1_1_type.html">Type</a> &gt; functionGenericArgs={})</td></tr>
+<tr class="separator:a966506a87464decd5d6cfa045c356569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace89bc2c7aa33958f3842af4e77b7ce8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#ace89bc2c7aa33958f3842af4e77b7ce8">delta::mangleInitDecl</a> (llvm::StringRef typeName, llvm::ArrayRef&lt; <a class="el" href="structdelta_1_1_type.html">Type</a> &gt; genericArgs={})</td></tr>
+<tr class="separator:ace89bc2c7aa33958f3842af4e77b7ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16b18399a169dfc63d7c378d531249b5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a16b18399a169dfc63d7c378d531249b5">delta::mangle</a> (const <a class="el" href="classdelta_1_1_deinit_decl.html">DeinitDecl</a> &amp;decl, llvm::ArrayRef&lt; <a class="el" href="structdelta_1_1_type.html">Type</a> &gt; typeGenericArgs={})</td></tr>
+<tr class="separator:a16b18399a169dfc63d7c378d531249b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a941ea7e1b8c26b51e39f747731c396d9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a941ea7e1b8c26b51e39f747731c396d9">delta::mangleDeinitDecl</a> (llvm::StringRef typeName)</td></tr>
 <tr class="separator:a941ea7e1b8c26b51e39f747731c396d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e4d7dcbdee88ee04aa38fa0f06a1bc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedelta.html#a38e4d7dcbdee88ee04aa38fa0f06a1bc">delta::mangle</a> (const <a class="el" href="classdelta_1_1_type_decl.html">TypeDecl</a> &amp;decl, llvm::ArrayRef&lt; <a class="el" href="structdelta_1_1_type.html">Type</a> &gt; genericArgs)</td></tr>
+<tr class="separator:a38e4d7dcbdee88ee04aa38fa0f06a1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

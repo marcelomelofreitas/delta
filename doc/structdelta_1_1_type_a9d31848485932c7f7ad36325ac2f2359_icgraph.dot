@@ -1,0 +1,11 @@
+digraph "delta::Type::isRangeType"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node441 [label="delta::Type::isRangeType",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node441 -> Node442 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node442 [label="delta::Type::getIterable\lElementType",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structdelta_1_1_type.html#a4f79fd97173997594b72111e760f9c21"];
+  Node442 -> Node443 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node443 [label="delta::IRGenerator\l::resolveTypePlaceholder",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdelta_1_1_i_r_generator.html#a3dcb9317d090022c47d62a2df03c46f7"];
+}

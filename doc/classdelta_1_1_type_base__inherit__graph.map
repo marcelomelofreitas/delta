@@ -1,7 +1,0 @@
-<map id="delta::TypeBase" name="delta::TypeBase">
-<area shape="rect" id="node2" href="$classdelta_1_1_array_type.html" title="delta::ArrayType" alt="" coords="5,79,124,104"/>
-<area shape="rect" id="node3" href="$classdelta_1_1_basic_type.html" title="delta::BasicType" alt="" coords="148,79,267,104"/>
-<area shape="rect" id="node4" href="$classdelta_1_1_func_type.html" title="delta::FuncType" alt="" coords="290,79,407,104"/>
-<area shape="rect" id="node5" href="$classdelta_1_1_ptr_type.html" title="delta::PtrType" alt="" coords="430,79,534,104"/>
-<area shape="rect" id="node6" href="$classdelta_1_1_tuple_type.html" title="delta::TupleType" alt="" coords="558,79,678,104"/>
-</map>

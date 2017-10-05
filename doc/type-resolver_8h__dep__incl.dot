@@ -1,0 +1,35 @@
+digraph "src/ast/type-resolver.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="src/ast/type-resolver.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="src/ast/expr.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$expr_8cpp.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="src/ast/type-resolver.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$type-resolver_8cpp.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="src/ast/type.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$type_8cpp.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="src/sema/typecheck.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$typecheck_8h.html"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="src/irgen/irgen.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$irgen_8h.html"];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="src/driver/driver.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$driver_8cpp.html"];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="src/driver/repl.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$repl_8cpp.html"];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="src/irgen/irgen-expr.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$irgen-expr_8cpp.html"];
+  Node6 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="src/irgen/irgen.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$irgen_8cpp.html"];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="src/parser/parse.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$parse_8cpp.html"];
+  Node5 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="src/sema/c-import.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$c-import_8cpp.html"];
+  Node5 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="src/sema/typecheck\l-expr.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$typecheck-expr_8cpp.html"];
+  Node5 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="src/sema/typecheck.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$typecheck_8cpp.html"];
+}

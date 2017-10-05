@@ -64,30 +64,68 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structdelta_1_1_binary_operator-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">delta::BinaryOperator Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="operators_8h_source.html">operators.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="token_8h_source.html">token.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a49ef3183c8b04a2817bbaaeafe361708"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdelta_1_1_binary_operator.html#a49ef3183c8b04a2817bbaaeafe361708">BinaryOperator</a> (int op)</td></tr>
-<tr class="separator:a49ef3183c8b04a2817bbaaeafe361708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7538d2eb4a7a7647c56189fbeed7376d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdelta_1_1_binary_operator.html#a7538d2eb4a7a7647c56189fbeed7376d">BinaryOperator</a> (<a class="el" href="structdelta_1_1_token.html">Token</a> token)</td></tr>
+<tr class="separator:a7538d2eb4a7a7647c56189fbeed7376d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc2cf1b7521980a438111dcd722c8e6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedelta.html#a2c180fa4fc8893d862b5517016c7036e">TokenKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdelta_1_1_binary_operator.html#abc2cf1b7521980a438111dcd722c8e6b">getKind</a> () const</td></tr>
+<tr class="separator:abc2cf1b7521980a438111dcd722c8e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c28c7a0ff21390e2a37f1904ec24d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdelta_1_1_binary_operator.html#a46c28c7a0ff21390e2a37f1904ec24d6">operator TokenKind</a> () const</td></tr>
+<tr class="separator:a46c28c7a0ff21390e2a37f1904ec24d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a542a36b6e83bc6cda33ad32f00cce5e1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdelta_1_1_binary_operator.html#a542a36b6e83bc6cda33ad32f00cce5e1">isComparisonOperator</a> () const</td></tr>
 <tr class="separator:a542a36b6e83bc6cda33ad32f00cce5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a4a9b37647d866da7a32078239a3615de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdelta_1_1_binary_operator.html#a4a9b37647d866da7a32078239a3615de">rawValue</a></td></tr>
-<tr class="separator:a4a9b37647d866da7a32078239a3615de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa081dfb23c443cace7a0a120de3523c6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdelta_1_1_binary_operator.html#aa081dfb23c443cace7a0a120de3523c6">isBitwiseOperator</a> () const</td></tr>
+<tr class="separator:aa081dfb23c443cace7a0a120de3523c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b392ddc10e53e747e6b02601ed1aa82"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdelta_1_1_binary_operator.html#a4b392ddc10e53e747e6b02601ed1aa82">getFunctionName</a> () const</td></tr>
+<tr class="separator:a4b392ddc10e53e747e6b02601ed1aa82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a49ef3183c8b04a2817bbaaeafe361708"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49ef3183c8b04a2817bbaaeafe361708">&#9670;&nbsp;</a></span>BinaryOperator()</h2>
+<a id="a7538d2eb4a7a7647c56189fbeed7376d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7538d2eb4a7a7647c56189fbeed7376d">&#9670;&nbsp;</a></span>BinaryOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BinaryOperator::BinaryOperator </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structdelta_1_1_token.html">Token</a>&#160;</td>
+          <td class="paramname"><em>token</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4b392ddc10e53e747e6b02601ed1aa82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b392ddc10e53e747e6b02601ed1aa82">&#9670;&nbsp;</a></span>getFunctionName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string BinaryOperator::getFunctionName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc2cf1b7521980a438111dcd722c8e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc2cf1b7521980a438111dcd722c8e6b">&#9670;&nbsp;</a></span>getKind()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -96,11 +134,10 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">delta::BinaryOperator::BinaryOperator </td>
+          <td class="memname"><a class="el" href="namespacedelta.html#a2c180fa4fc8893d862b5517016c7036e">TokenKind</a> delta::BinaryOperator::getKind </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>op</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -112,7 +149,29 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa081dfb23c443cace7a0a120de3523c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa081dfb23c443cace7a0a120de3523c6">&#9670;&nbsp;</a></span>isBitwiseOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BinaryOperator::isBitwiseOperator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 0 -->
+</div>
+</div>
+
+</div>
+</div>
 <a id="a542a36b6e83bc6cda33ad32f00cce5e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a542a36b6e83bc6cda33ad32f00cce5e1">&#9670;&nbsp;</a></span>isComparisonOperator()</h2>
 
@@ -127,27 +186,43 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><!-- SVG 1 -->
+</div>
+</div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4a9b37647d866da7a32078239a3615de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a9b37647d866da7a32078239a3615de">&#9670;&nbsp;</a></span>rawValue</h2>
+<a id="a46c28c7a0ff21390e2a37f1904ec24d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46c28c7a0ff21390e2a37f1904ec24d6">&#9670;&nbsp;</a></span>operator TokenKind()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int delta::BinaryOperator::rawValue</td>
+          <td class="memname">delta::BinaryOperator::operator <a class="el" href="namespacedelta.html#a2c180fa4fc8893d862b5517016c7036e">TokenKind</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
-<li>src/parser/<a class="el" href="operators_8h_source.html">operators.h</a></li>
-<li>src/parser/<a class="el" href="operators_8cpp.html">operators.cpp</a></li>
+<li>src/ast/<a class="el" href="token_8h_source.html">token.h</a></li>
+<li>src/ast/<a class="el" href="token_8cpp.html">token.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
